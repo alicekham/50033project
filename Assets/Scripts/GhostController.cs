@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class PlayerController : MonoBehaviour
+public class GhostController : MonoBehaviour
 {
-    [SerializeField] private FieldOfView fieldOfView;
+    // [SerializeField] private FieldOfView fieldOfView;
     private Rigidbody2D ghostBody;
     private SpriteRenderer ghostSprite;
     public float speed;
@@ -36,14 +36,12 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        fieldOfView.SetDirection(ghostBody.velocity);
-        fieldOfView.SetOrigin(transform.position);
     }
 
     void FixedUpdate()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
-        ghostBody.MovePosition(ghostBody.position + (movement * speed * Time.fixedDeltaTime));
+        // movement.x = Input.GetAxisRaw("Horizontal");
+        // movement.y = Input.GetAxisRaw("Vertical");
+        // ghostBody.MovePosition(ghostBody.position + (movement * speed * Time.fixedDeltaTime));
     }
 }

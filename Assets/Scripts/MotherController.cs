@@ -7,6 +7,7 @@ public class MotherController : MonoBehaviour
     [SerializeField] private FieldOfView fieldOfView;
     private Rigidbody2D motherBody;
     private Vector3 dir;
+
     // Start is called before the first frame update
     void Start()
     {
