@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 14669098}
   - component: {fileID: 14669101}
   - component: {fileID: 14669100}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Patio_Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1051,8 +1051,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.31, y: -0.82, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1726604040}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3360,7 +3359,7 @@ GameObject:
   - component: {fileID: 826991928}
   - component: {fileID: 826991931}
   - component: {fileID: 826991930}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: K_Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4108,7 +4107,7 @@ GameObject:
   - component: {fileID: 971746972}
   - component: {fileID: 971746975}
   - component: {fileID: 971746974}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Workshop_Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5005,7 +5004,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1286698593
 MonoBehaviour:
@@ -5187,7 +5186,7 @@ MonoBehaviour:
   m_VoxelSize: 0.06666667
   m_BuildHeightMesh: 0
   m_HideEditorLogs: 0
-  m_NavMeshData: {fileID: 23800000, guid: ba06c58526ddeca41b84e7a396b8e1e8, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 89664ff7a836cee4094344c38dddf7db, type: 2}
 --- !u!4 &1390372773
 Transform:
   m_ObjectHideFlags: 0
@@ -6527,7 +6526,7 @@ GameObject:
   - component: {fileID: 1623391392}
   - component: {fileID: 1623391391}
   - component: {fileID: 1623391393}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: LR_Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6977,7 +6976,7 @@ GameObject:
   - component: {fileID: 1726604039}
   - component: {fileID: 1726604038}
   - component: {fileID: 1726604037}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: FieldOfView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7048,7 +7047,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layerMask:
     serializedVersion: 2
-    m_Bits: 2147483647
+    m_Bits: 64
+  motherBody: {fileID: 233248941}
 --- !u!4 &1726604040
 Transform:
   m_ObjectHideFlags: 0
@@ -7056,12 +7056,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1726604036}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.235529, y: 5.59, z: 12.72}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 12.72}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 233248943}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1747189089
 GameObject:
@@ -8085,7 +8085,7 @@ Transform:
   - {fileID: 438617011}
   - {fileID: 1374184940}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1996429381
 GameObject:
