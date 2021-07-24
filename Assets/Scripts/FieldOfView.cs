@@ -5,9 +5,10 @@ using UnityEngine;
 public class FieldOfView : MonoBehaviour
 {
     [SerializeField] private LayerMask layerMask;
+    public GameObject motherBody;
     private Mesh mesh;
     private float fov;
-    private Vector3 origin = Vector3.zero;
+    private Vector3 origin;
     private float startingAngle;
 
     // Start is called before the first frame update
@@ -15,6 +16,8 @@ public class FieldOfView : MonoBehaviour
         mesh = new Mesh();
         GetComponent<MeshFilter>().mesh = mesh;
         fov = 90f;
+        //Vector3 parentPosition = motherBody.transform.position;
+        origin = Vector3.zero;
     }
 
     private void LateUpdate()
@@ -22,14 +25,13 @@ public class FieldOfView : MonoBehaviour
         int rayCount = 25;
         float angle = startingAngle;
         float angleIncrease = fov / rayCount;
-        float viewDistance = 20f;
+        float viewDistance = 2.5f;
 
         Vector3[] vertices = new Vector3[rayCount + 1 + 1];
         Vector2[] uv = new Vector2[vertices.Length];
         int[] triangles = new int[rayCount * 3];
 
         vertices[0] = origin;
-
         int vertexIndex = 1;
         int triangleIndex = 0;
         for (int i = 0; i <= rayCount; i++) {
@@ -40,9 +42,11 @@ public class FieldOfView : MonoBehaviour
             if (raycastHit2D.collider == null) {
                 // FOV does not hit obstacle
                 vertex = origin + vecfromangle * viewDistance;
+                Debug.Log("No hit");
             } else {
                 // FOV hits obstacle
                 vertex = raycastHit2D.point;
+                Debug.Log("Hit");
             }
             vertices[vertexIndex] = vertex;
 
@@ -62,7 +66,7 @@ public class FieldOfView : MonoBehaviour
         mesh.vertices = vertices;
         mesh.uv = uv;
         mesh.triangles = triangles;
-        Debug.Log(origin);
+        //Debug.Log(origin);
     }
 
     public void SetOrigin(Vector3 org) {
@@ -71,7 +75,7 @@ public class FieldOfView : MonoBehaviour
     public void SetDirection(Vector3 dirn) {
         dirn = dirn.normalized;
         startingAngle = Mathf.Atan2(dirn.y, dirn.x) * Mathf.Rad2Deg;
-        Debug.Log(startingAngle);
+        //Debug.Log(startingAngle);
         if (startingAngle < 0) startingAngle += 360;
         startingAngle += fov / 2f;
     }

@@ -18,15 +18,15 @@ public class Patrol : MonoBehaviour
         agent.updateRotation = false;
         agent.updateUpAxis = false;
         currentWP = 0;
-        Debug.Log("Patrol starts...");
+        //Debug.Log("Patrol starts...");
     }
 
     void Update()
     {
         // agent.SetDestination(new Vector3(1.0f,5.0f,transform.position.z));
-        Debug.Log("Update starts...");
+        //Debug.Log("Update starts...");
         agent.SetDestination(wayPoints[currentWP].transform.position);
-        Debug.Log("Update: " + currentWP);
+        //Debug.Log("Update: " + currentWP);
         
         // check if it has reached the stop
         if(Vector2.Distance(transform.position, wayPoints[currentWP].position) < 0.2f) {
@@ -42,7 +42,7 @@ public class Patrol : MonoBehaviour
                 waitTime -= Time.deltaTime;
             }
         }
-        Debug.Log("Update end...");
+        //Debug.Log("Update end...");
     }
 }
 

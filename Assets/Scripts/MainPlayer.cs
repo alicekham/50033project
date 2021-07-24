@@ -34,7 +34,7 @@ public class MainPlayer : MonoBehaviour
 
         if (dist<1.2f)
         {
-            Debug.Log("less than 1.2f!");
+            //Debug.Log("less than 1.2f!");
         }
         
         if(Input.GetKeyDown(KeyCode.Space) && dist<1.2f)
