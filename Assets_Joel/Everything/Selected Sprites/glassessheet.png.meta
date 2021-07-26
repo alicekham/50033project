@@ -1,0 +1,2016 @@
+fileFormatVersion: 2
+guid: 4c31bc34796cf1a408564058c098720b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6546065623993286096
+    second: glassessheet_0
+  - first:
+      213: 5743909130436938087
+    second: glassessheet_1
+  - first:
+      213: -2552433471853376768
+    second: glassessheet_2
+  - first:
+      213: -4602132053261974890
+    second: glassessheet_3
+  - first:
+      213: -1282987634607446487
+    second: glassessheet_4
+  - first:
+      213: 2683356817936166323
+    second: glassessheet_5
+  - first:
+      213: 879011193729872159
+    second: glassessheet_6
+  - first:
+      213: -2482972055829679933
+    second: glassessheet_7
+  - first:
+      213: -2948331978670562533
+    second: glassessheet_8
+  - first:
+      213: -514374768954240051
+    second: glassessheet_9
+  - first:
+      213: 2869413470491974132
+    second: glassessheet_10
+  - first:
+      213: 9121791887782876716
+    second: glassessheet_11
+  - first:
+      213: -4688236948211411334
+    second: glassessheet_12
+  - first:
+      213: 3592055774752915796
+    second: glassessheet_13
+  - first:
+      213: -2981504592275574942
+    second: glassessheet_14
+  - first:
+      213: 2228005415076791798
+    second: glassessheet_15
+  - first:
+      213: -9086589678415866720
+    second: glassessheet_16
+  - first:
+      213: -345183887148823991
+    second: glassessheet_17
+  - first:
+      213: 1812061982180826332
+    second: glassessheet_18
+  - first:
+      213: 7894392644390181167
+    second: glassessheet_19
+  - first:
+      213: 5859916397807047678
+    second: glassessheet_20
+  - first:
+      213: -643127438265447476
+    second: glassessheet_21
+  - first:
+      213: -7838827915647443452
+    second: glassessheet_22
+  - first:
+      213: -9090809719724203901
+    second: glassessheet_23
+  - first:
+      213: 6751660750268310055
+    second: glassessheet_24
+  - first:
+      213: -4616314301177202762
+    second: glassessheet_25
+  - first:
+      213: 3509633783820396462
+    second: glassessheet_26
+  - first:
+      213: 7221798003464136665
+    second: glassessheet_27
+  - first:
+      213: -7337442198408308753
+    second: glassessheet_28
+  - first:
+      213: -1129209018641429864
+    second: glassessheet_29
+  - first:
+      213: -3759376050031328712
+    second: glassessheet_30
+  - first:
+      213: 4543424197784696073
+    second: glassessheet_31
+  - first:
+      213: -6106774903418178486
+    second: glassessheet_32
+  - first:
+      213: -3607672136164305587
+    second: glassessheet_33
+  - first:
+      213: 2992598179879136503
+    second: glassessheet_34
+  - first:
+      213: -4729994493598508696
+    second: glassessheet_35
+  - first:
+      213: 2702256705564894652
+    second: glassessheet_36
+  - first:
+      213: -1490284999928751202
+    second: glassessheet_37
+  - first:
+      213: 5282552760643549005
+    second: glassessheet_38
+  - first:
+      213: 2457149747726391651
+    second: glassessheet_39
+  - first:
+      213: 3823372584619931375
+    second: glassessheet_40
+  - first:
+      213: 7320415176105740368
+    second: glassessheet_41
+  - first:
+      213: -9146082644217425751
+    second: glassessheet_42
+  - first:
+      213: -1071475088086866082
+    second: glassessheet_43
+  - first:
+      213: -2838433245101657598
+    second: glassessheet_44
+  - first:
+      213: -3692867414678177198
+    second: glassessheet_45
+  - first:
+      213: 261512327577322122
+    second: glassessheet_46
+  - first:
+      213: 4328638519532301589
+    second: glassessheet_47
+  - first:
+      213: -2863564320145946643
+    second: glassessheet_48
+  - first:
+      213: 8550073024454147389
+    second: glassessheet_49
+  - first:
+      213: 548105046429395250
+    second: glassessheet_50
+  - first:
+      213: -2184756552183166258
+    second: glassessheet_51
+  - first:
+      213: 1408775213777105849
+    second: glassessheet_52
+  - first:
+      213: -7728829723919281560
+    second: glassessheet_53
+  - first:
+      213: -9138552789175507709
+    second: glassessheet_54
+  - first:
+      213: -3676137840661576349
+    second: glassessheet_55
+  - first:
+      213: 687041573227911560
+    second: glassessheet_56
+  - first:
+      213: 5276436059557870383
+    second: glassessheet_57
+  - first:
+      213: 4762422621595805807
+    second: glassessheet_58
+  - first:
+      213: -3163904366243646192
+    second: glassessheet_59
+  - first:
+      213: 5592800144254962945
+    second: glassessheet_60
+  - first:
+      213: 1559501111307352297
+    second: glassessheet_61
+  - first:
+      213: 1211983814714219564
+    second: glassessheet_62
+  - first:
+      213: 1861237432511848304
+    second: glassessheet_63
+  - first:
+      213: -2981101341369603940
+    second: glassessheet_64
+  - first:
+      213: -1490649780578579791
+    second: glassessheet_65
+  - first:
+      213: -8523965255238617120
+    second: glassessheet_66
+  - first:
+      213: 9153428884472800280
+    second: glassessheet_67
+  - first:
+      213: -6514323397642072685
+    second: glassessheet_68
+  - first:
+      213: -8979517093462951236
+    second: glassessheet_69
+  - first:
+      213: -8768657464774320429
+    second: glassessheet_70
+  - first:
+      213: -8305564572391484319
+    second: glassessheet_71
+  - first:
+      213: -8629716647487529765
+    second: glassessheet_72
+  - first:
+      213: 5548543108527457381
+    second: glassessheet_73
+  - first:
+      213: 4056639096145160871
+    second: glassessheet_74
+  - first:
+      213: 7985295537031867850
+    second: glassessheet_75
+  - first:
+      213: -3171402851711803089
+    second: glassessheet_76
+  - first:
+      213: 3771498286401621067
+    second: glassessheet_77
+  - first:
+      213: 3553794839335682924
+    second: glassessheet_78
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: glassessheet_0
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 466
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ddf382a00c48da50800000000000000
+      internalID: 6546065623993286096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_1
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 436
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76901ddebe676bf40800000000000000
+      internalID: 5743909130436938087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_2
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 424
+        width: 56
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00bcc5dd74fe39cd0800000000000000
+      internalID: -2552433471853376768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_3
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 427
+        width: 56
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69281ebd741f120c0800000000000000
+      internalID: -4602132053261974890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_4
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 426
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 926210c3b89e13ee0800000000000000
+      internalID: -1282987634607446487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_5
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 426
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd25b21fc23d3520800000000000000
+      internalID: 2683356817936166323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_6
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 414
+        width: 52
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f117cd30600e23c00800000000000000
+      internalID: 879011193729872159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_7
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 406
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c0fc011216ba8dd0800000000000000
+      internalID: -2482972055829679933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_8
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 406
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b13aa63bfab6517d0800000000000000
+      internalID: -2948331978670562533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_9
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 396
+        width: 58
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc31f077fd29cd8f0800000000000000
+      internalID: -514374768954240051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_10
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 394
+        width: 67
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f9156e395432d720800000000000000
+      internalID: 2869413470491974132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_11
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 382
+        width: 54
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c269652846d179e70800000000000000
+      internalID: 9121791887782876716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_12
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 375
+        width: 56
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a765ffeb55900feb0800000000000000
+      internalID: -4688236948211411334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_13
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 357
+        width: 80
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451c98312bb89d130800000000000000
+      internalID: 3592055774752915796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_14
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 354
+        width: 44
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26fe739be519f96d0800000000000000
+      internalID: -2981504592275574942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_15
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 334
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f58c4bde177bee10800000000000000
+      internalID: 2228005415076791798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_16
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 354
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a49a4e84d2f5e180800000000000000
+      internalID: -9086589678415866720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_17
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 362
+        width: 56
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94a4e406519a53bf0800000000000000
+      internalID: -345183887148823991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_18
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 338
+        width: 35
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdcd0e6a5ccb52910800000000000000
+      internalID: 1812061982180826332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_19
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 328
+        width: 55
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f295556a8448e8d60800000000000000
+      internalID: 7894392644390181167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_20
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 303
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef396c8aaea925150800000000000000
+      internalID: 5859916397807047678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_21
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 303
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb81e890072317f0800000000000000
+      internalID: -643127438265447476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_22
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 319
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e1b68ea83e63390800000000000000
+      internalID: -7838827915647443452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_23
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 319
+        width: 47
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380ab2f99b4f6d180800000000000000
+      internalID: -9090809719724203901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_24
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 320
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 722a0b73ea7b2bd50800000000000000
+      internalID: 6751660750268310055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_25
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 319
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7f6c2f99e8fefb0800000000000000
+      internalID: -4616314301177202762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_26
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 302
+        width: 52
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea72350e459b4b030800000000000000
+      internalID: 3509633783820396462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_27
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 303
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d7ea1c750bf83460800000000000000
+      internalID: 7221798003464136665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_28
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 303
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe759eb223b2c2a90800000000000000
+      internalID: -7337442198408308753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_29
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 299
+        width: 54
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ac5be516e3450f0800000000000000
+      internalID: -1129209018641429864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_30
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 287
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83285c8866304dbc0800000000000000
+      internalID: -3759376050031328712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_31
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 288
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 905fedc5c3c7d0f30800000000000000
+      internalID: 4543424197784696073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_32
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 283
+        width: 52
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a443d769490604ba0800000000000000
+      internalID: -6106774903418178486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_33
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 290
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d451ad17e49feedc0800000000000000
+      internalID: -3607672136164305587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_34
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 290
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fc2d2b6038d78920800000000000000
+      internalID: 2992598179879136503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_35
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 271
+        width: 58
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869d183911fab5eb0800000000000000
+      internalID: -4729994493598508696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_36
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 258
+        width: 66
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb5ec131828508520800000000000000
+      internalID: 2702256705564894652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_37
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 254
+        width: 57
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b572d30b1715be0800000000000000
+      internalID: -1490284999928751202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_38
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 271
+        width: 35
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d47fa656fb56f4940800000000000000
+      internalID: 5282552760643549005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_39
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 226
+        width: 68
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3691c215dac891220800000000000000
+      internalID: 2457149747726391651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_40
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 226
+        width: 59
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe6fc3ecb195f0530800000000000000
+      internalID: 3823372584619931375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_41
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 248
+        width: 48
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058492441d6579560800000000000000
+      internalID: 7320415176105740368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_42
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 247
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a01e090b46921180800000000000000
+      internalID: -9146082644217425751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_43
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 247
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57e6e4951b5121f0800000000000000
+      internalID: -1071475088086866082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_44
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 205
+        width: 60
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2027e03900cdb98d0800000000000000
+      internalID: -2838433245101657598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_45
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 210
+        width: 59
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25afd79e6ac40ccc0800000000000000
+      internalID: -3692867414678177198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_46
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 214
+        width: 57
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a82c1ad831411a300800000000000000
+      internalID: 261512327577322122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_47
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 210
+        width: 56
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51dabc5acc9621c30800000000000000
+      internalID: 4328638519532301589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_48
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 194
+        width: 53
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de7c7323c639248d0800000000000000
+      internalID: -2863564320145946643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_49
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 180
+        width: 58
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3d3d329d16f7a670800000000000000
+      internalID: 8550073024454147389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_50
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 178
+        width: 47
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 239e500c2a24b9700800000000000000
+      internalID: 548105046429395250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_51
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 187
+        width: 22
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eca4a6abd7f2ea1e0800000000000000
+      internalID: -2184756552183166258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_52
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 187
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b33f89c799fc8310800000000000000
+      internalID: 1408775213777105849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_53
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 170
+        width: 52
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8629f40b05eadb490800000000000000
+      internalID: -7728829723919281560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_54
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 156
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305e90808a65d2180800000000000000
+      internalID: -9138552789175507709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_55
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 156
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 365cef56c1cbbfcc0800000000000000
+      internalID: -3676137840661576349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_56
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 157
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 889dc26bbacd88900800000000000000
+      internalID: 687041573227911560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_57
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 150
+        width: 59
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b3202f3aaa93940800000000000000
+      internalID: 5276436059557870383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_58
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 158
+        width: 54
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f68a0865426871240800000000000000
+      internalID: 4762422621595805807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_59
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 147
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0157db2fdbd8714d0800000000000000
+      internalID: -3163904366243646192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_60
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 135
+        width: 23
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d021a691e9d9d40800000000000000
+      internalID: 5592800144254962945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_61
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 135
+        width: 23
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e83d468ff574a510800000000000000
+      internalID: 1559501111307352297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_62
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 97
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c509dabd4d1d010800000000000000
+      internalID: 1211983814714219564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_63
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 100
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f5787659174d910800000000000000
+      internalID: 1861237432511848304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_64
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 119
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c986934ef1001a6d0800000000000000
+      internalID: -2981101341369603940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_65
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 114
+        width: 67
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ba89102ce5205be0800000000000000
+      internalID: -1490649780578579791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_66
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 96
+        width: 56
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e7fab323cac4b980800000000000000
+      internalID: -8523965255238617120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_67
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 94
+        width: 59
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8142dcfc213870f70800000000000000
+      internalID: 9153428884472800280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_68
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 74
+        width: 59
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d478b52697895a0800000000000000
+      internalID: -6514323397642072685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_69
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 54
+        width: 49
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbab79d67c8526380800000000000000
+      internalID: -8979517093462951236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_70
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 54
+        width: 55
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de9c0f7e787f4680800000000000000
+      internalID: -8768657464774320429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_71
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 72
+        width: 62
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1645983b605bcbc80800000000000000
+      internalID: -8305564572391484319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_72
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 50
+        width: 52
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc1b3a6e661d3880800000000000000
+      internalID: -8629716647487529765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_73
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 42
+        width: 58
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56488bc4f82600d40800000000000000
+      internalID: 5548543108527457381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_74
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 27
+        width: 55
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aaa1b3d3c31c4830800000000000000
+      internalID: 4056639096145160871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_75
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 26
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acdeb47abf771de60800000000000000
+      internalID: 7985295537031867850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_76
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 26
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21ae00c8e9ecf3d0800000000000000
+      internalID: -3171402851711803089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_77
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 18
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c86ff85bd075430800000000000000
+      internalID: 3771498286401621067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glassessheet_78
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 18
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c63483bd39d915130800000000000000
+      internalID: 3553794839335682924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
