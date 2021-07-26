@@ -32,16 +32,4 @@ public class GhostController : MonoBehaviour
         ghostAgent.updateRotation = false;
         ghostAgent.updateUpAxis = false;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
-    void FixedUpdate()
-    {
-        // movement.x = Input.GetAxisRaw("Horizontal");
-        // movement.y = Input.GetAxisRaw("Vertical");
-        // ghostBody.MovePosition(ghostBody.position + (movement * speed * Time.fixedDeltaTime));
-    }
 }

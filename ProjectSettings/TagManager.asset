@@ -6,6 +6,12 @@ TagManager:
   tags:
   - Human
   - Ghost
+  - family
+  - grabbable
+  - obtainables
+  - mother
+  - daughter
+  - door
   layers:
   - Default
   - TransparentFX

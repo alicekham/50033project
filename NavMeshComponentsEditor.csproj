@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{221e14c5-07cd-6530-734d-59814747a808}</ProjectGuid>
+    <ProjectGuid>{3a86e85b-c2ce-3045-af61-27b525a4d661}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>NavMeshComponentsEditor</AssemblyName>
@@ -282,8 +282,11 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="clipper_library">
+        <HintPath>C:/Users/alice/Documents/GitHub/50033project/Library/PackageCache/com.unity.cinemachine@2.7.5/Runtime/ThirdParty/clipper_library.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
-        <HintPath>C:/Users/alice/Documents/TERM8/50.033/project1/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
+        <HintPath>C:/Users/alice/Documents/GitHub/50033project/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -634,21 +637,21 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>C:/Users/alice/Documents/TERM8/50.033/project1/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>C:/Users/alice/Documents/GitHub/50033project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>C:/Users/alice/Documents/TERM8/50.033/project1/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>C:/Users/alice/Documents/GitHub/50033project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-        <HintPath>C:/Users/alice/Documents/TERM8/50.033/project1/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+        <HintPath>C:/Users/alice/Documents/GitHub/50033project/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
-        <HintPath>C:/Users/alice/Documents/TERM8/50.033/project1/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+        <HintPath>C:/Users/alice/Documents/GitHub/50033project/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="NavMeshComponents.csproj">
-      <Project>{6dc47cd1-5a8e-f0fa-3b0f-5029d6f2df44}</Project>
+      <Project>{bad6c190-5f17-4c44-b165-9d23596a0069}</Project>
       <Name>NavMeshComponents</Name>
     </ProjectReference>
   </ItemGroup>

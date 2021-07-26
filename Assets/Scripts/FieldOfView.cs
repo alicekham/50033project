@@ -5,7 +5,7 @@ using UnityEngine;
 public class FieldOfView : MonoBehaviour
 {
     [SerializeField] private LayerMask layerMask;
-    public GameObject motherBody;
+    public GameObject humanBody;
     private Mesh mesh;
     private float fov;
     private Vector3 origin;
@@ -16,7 +16,7 @@ public class FieldOfView : MonoBehaviour
         mesh = new Mesh();
         GetComponent<MeshFilter>().mesh = mesh;
         fov = 90f;
-        //Vector3 parentPosition = motherBody.transform.position;
+        //Vector3 parentPosition = humanBody.transform.position;
         origin = Vector3.zero;
     }
 
