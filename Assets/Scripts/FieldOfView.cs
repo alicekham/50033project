@@ -1,22 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class FieldOfView : MonoBehaviour
 {
     [SerializeField] private LayerMask layerMask;
-    public GameObject humanBody;
+    public GameObject motherBody;
     private Mesh mesh;
     private float fov;
     private Vector3 origin;
     private float startingAngle;
+    private GameObject ghostBody;
+    public UnityEvent onDamageGhost;
+    public UnityEvent onStopDamageGhost;
+    private bool ghostDetected = false;
 
     // Start is called before the first frame update
     private void Start() {
+        ghostBody = GameObject.FindGameObjectsWithTag("Ghost")[0];
         mesh = new Mesh();
         GetComponent<MeshFilter>().mesh = mesh;
         fov = 90f;
-        //Vector3 parentPosition = humanBody.transform.position;
+        //Vector3 parentPosition = motherBody.transform.position;
         origin = Vector3.zero;
     }
 
@@ -34,6 +40,7 @@ public class FieldOfView : MonoBehaviour
         vertices[0] = origin;
         int vertexIndex = 1;
         int triangleIndex = 0;
+        int countNumRayDectectsGhost = 0;
         for (int i = 0; i <= rayCount; i++) {
             float angleRad = angle * (Mathf.PI / 180f);
             Vector3 vecfromangle = new Vector3(Mathf.Cos(angleRad), Mathf.Sin(angleRad));
@@ -41,13 +48,39 @@ public class FieldOfView : MonoBehaviour
             RaycastHit2D raycastHit2D = Physics2D.Raycast(origin, vecfromangle, viewDistance, layerMask);
             if (raycastHit2D.collider == null) {
                 // FOV does not hit obstacle
+
                 vertex = origin + vecfromangle * viewDistance;
-                Debug.Log("No hit");
-            } else {
-                // FOV hits obstacle
-                vertex = raycastHit2D.point;
-                Debug.Log("Hit");
+                //Debug.Log("No hit");
+                
+                
             }
+            else if (raycastHit2D.collider == ghostBody.GetComponent<BoxCollider2D>())
+            {
+                vertex = origin + vecfromangle * viewDistance;
+                countNumRayDectectsGhost++;
+                //Debug.Log("Yes");
+                if (ghostDetected == false)
+                {
+                    ghostDetected = true;
+                    onDamageGhost.Invoke();
+                    Debug.Log("Entered");
+                }
+
+            }
+            else {
+                // FOV hits obstacle
+                //Debug.Log(raycastHit2D.collider);
+                vertex = raycastHit2D.point;
+                //Debug.Log("Hit");
+                
+            }
+
+            if (countNumRayDectectsGhost == 0)
+            {
+                ghostDetected = false;
+                onStopDamageGhost.Invoke();
+            }
+
             vertices[vertexIndex] = vertex;
 
             if (i > 0)
