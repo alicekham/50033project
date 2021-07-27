@@ -104,18 +104,11 @@ public class MainPlayer : MonoBehaviour
                 rb.velocity = Vector2.zero;
                 rb = ghostBody;
                 currentHumanAgent.isStopped = false;
+                currentHumanAgent.updatePosition = false;
                 ghostGameObject.SetActive(true);
             }
             rb.MovePosition(rb.position + (movement * speed * Time.fixedDeltaTime));
             rbTransform.position = rb.transform.position;
-        }
-    }
-    void OnCollisionEnter2D(Collision2D other)
-    {
-        Debug.Log("Collision occured!");
-        if (other.gameObject.CompareTag("Ghost"))
-        {
-            Debug.Log("Collided with Chost");
         }
     }
 }
