@@ -11,6 +11,13 @@ public class daughterController : MonoBehaviour
     private bool walkState;
     private  Animator daughterAnimator;
     private Vector2 moveDir;
+    private bool isSister;
+
+    [SerializeField] private FieldOfView fieldOfView;
+    public GameConstants gameConstants;
+    private Vector3 posn;
+    private Vector3 newposn;
+    private Vector3 dir;
 
 
     public GameObject basketball;
@@ -19,10 +26,12 @@ public class daughterController : MonoBehaviour
     public float throwspeed = 5;
     
 
-    GameObject GetChildWithName(string name) {          
+    GameObject GetChildWithName(string name)
+    {          
         Transform trans = this.gameObject.transform;
         Transform childTrans = trans.Find(name);
-        if (childTrans != null) {
+        if (childTrans != null)
+        {
             return childTrans.gameObject;
         } else {
             return null;
@@ -34,6 +43,7 @@ public class daughterController : MonoBehaviour
     daughterSprite = GetComponent<SpriteRenderer>();
     daughterBody = GetComponent<Rigidbody2D>();
     daughterAnimator = GetComponent<Animator>();
+    posn = daughterBody.transform.localPosition;
     basketball = GetChildWithName("Basketball Holder");
     basketballBody = basketball.GetComponent<Rigidbody2D>();
 
@@ -41,13 +51,21 @@ public class daughterController : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {   // movement
+    {   //Update FOV
+        newposn = daughterBody.transform.localPosition;
+        dir = newposn - posn;
+        posn = newposn;
+        // Debug.Log(dir);
+        fieldOfView.SetDirection(dir);
+        fieldOfView.SetOrigin(transform.position);
+
+        // movement
         Horizontal = Input.GetAxisRaw("Horizontal");
         Vertical = Input.GetAxisRaw("Vertical");
 
-        if (Horizontal != 0 || Vertical != 0) {
-            daughterAnimator.SetFloat("Horizontal", Horizontal);
-            daughterAnimator.SetFloat("Vertical", Vertical);
+        if (dir.x != 0 || dir.y != 0) {
+            daughterAnimator.SetFloat("Horizontal", dir.x);
+            daughterAnimator.SetFloat("Vertical", dir.y);
 
             if (!walkState) {
                 walkState = true;
@@ -59,7 +77,7 @@ public class daughterController : MonoBehaviour
             if (walkState) {
                 walkState = false;
                 daughterAnimator.SetBool("walkState", walkState);
-                StopMoving();
+                daughterBody.velocity = Vector3.zero;
             }
         }
         moveDir = new Vector3(Horizontal,Vertical).normalized;
@@ -83,38 +101,74 @@ public class daughterController : MonoBehaviour
         }
 
         //basketball throwing
-        if (Input.GetKeyDown("m")) {
-            basketball.SetActive(true);
-            if (throwdir == "up") {
-            basketball.transform.localPosition = new Vector3(0, 1, 0);
-            basketballBody.AddForce(Vector2.up * throwspeed, ForceMode2D.Impulse);
+        if (gameConstants.isDaughter == true)
+        {
+            if (Input.GetKeyDown("m"))
+            {
+                basketball.SetActive(true);
+                StartCoroutine(throwBall());
             }
-            else if (throwdir == "down") {
-                basketball.transform.localPosition = new Vector3(0, -1, 0);
-                basketballBody.AddForce(Vector2.down * throwspeed, ForceMode2D.Impulse);
-            }
-            else if (throwdir == "left") {
-                basketball.transform.localPosition = new Vector3(-1, 0, 0);
-                basketballBody.AddForce(Vector2.left * throwspeed, ForceMode2D.Impulse);
-            }
-            else {
-                basketball.transform.localPosition = new Vector3(1, 0, 0);
-                basketballBody.AddForce(Vector2.right * throwspeed, ForceMode2D.Impulse);
-            }
-
-
         }
 
+        IEnumerator throwBall()
+        {
+            
+            if (throwdir == "up")
+            {
+                basketball.transform.localPosition = new Vector3(0, 0.5f, 0);
+                for (int i = 0; i < 7; i++)
+                {
+                    //basketballBody.AddForce(Vector2.up * throwspeed, ForceMode2D.Impulse);
+                    basketball.transform.localPosition += new Vector3(0, 0.25f, 0);
+                    yield return new WaitForSeconds(0.05f);
+                }
+                basketball.SetActive(false);
+                yield break;
+            }
+            else if (throwdir == "down")
+            {
+                basketball.transform.localPosition = new Vector3(0, -0.5f, 0);
+                for (int i = 0; i < 7; i++)
+                {
+                    //basketballBody.AddForce(Vector2.up * throwspeed, ForceMode2D.Impulse);
+                    basketball.transform.localPosition += new Vector3(0, -0.25f, 0);
+                    yield return new WaitForSeconds(0.05f);
+                }
+                basketball.SetActive(false);
+                yield break;
+            }
+            else if (throwdir == "left")
+            {
+                basketball.transform.localPosition = new Vector3(-0.5f, 0, 0);
+                for (int i = 0; i < 7; i++)
+                {
+                    //basketballBody.AddForce(Vector2.up * throwspeed, ForceMode2D.Impulse);
+                    basketball.transform.localPosition += new Vector3(-0.25f, 0, 0);
+                    yield return new WaitForSeconds(0.05f);
+                }
+                basketball.SetActive(false);
+                yield break;
+            }
+            else
+            {
+                basketball.transform.localPosition = new Vector3(0.5f, 0, 0);
+                for (int i = 0; i < 7; i++)
+                {
+                    //basketballBody.AddForce(Vector2.up * throwspeed, ForceMode2D.Impulse);
+                    basketball.transform.localPosition += new Vector3(0.25f, 0, 0);
+                    yield return new WaitForSeconds(0.05f);
+                }
+                basketball.SetActive(false);
+                yield break;
+            } 
+            
+        }
 
     }
 
-    private void StopMoving() {
-        daughterBody.velocity = Vector3.zero;
-    }
-
-    void FixedUpdate() 
-    {
+    //void FixedUpdate() 
+    //{
     // daughterBody.velocity = moveDir * speed * Time.deltaTime;
-    daughterBody.MovePosition(daughterBody.position + (moveDir * speed * Time.fixedDeltaTime));
-}
+    //daughterBody.MovePosition(daughterBody.position + (moveDir * speed * Time.fixedDeltaTime));
+    //}
 }

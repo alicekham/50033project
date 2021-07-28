@@ -39,4 +39,10 @@ public class GameConstants : ScriptableObject
 
     // for testing
     //public int testValue;
+
+    //Body Boolean
+    public bool isMother = false;
+    public bool isButler = false;
+    public bool isDaughter = false;
+
 }

@@ -9,6 +9,8 @@ public class MainPlayer : MonoBehaviour
     public float speed;
     private Vector2 movement;
 
+    public GameConstants gameConstants;
+
     [SerializeField] Rigidbody2D[] humanBody;
     private int humanPossessed;
 
@@ -58,6 +60,9 @@ public class MainPlayer : MonoBehaviour
                 humanPossessed = i;
                 currentHumanBody = humanBody[i];
                 currentHumanAgent = humanAgent[i];
+                if (i == 0) gameConstants.isMother = true;
+                if (i == 1) gameConstants.isButler = true;
+                if (i == 2) gameConstants.isDaughter = true;
             }
             if (Input.GetKeyDown(KeyCode.Space) && distWithToyCar < 1.2f)
             {
@@ -67,6 +72,9 @@ public class MainPlayer : MonoBehaviour
             if (rb.CompareTag("Human") && Input.GetKeyDown(KeyCode.Space)) {
                 Debug.Log("Eject!");
                 ishumanBody = false;
+                gameConstants.isMother = false;
+                gameConstants.isButler = false;
+                gameConstants.isDaughter = false;
                 ghostBody.transform.position = currentHumanBody.transform.position - Vector3.right;
             }
             if (rb.CompareTag("Object") && Input.GetKeyDown(KeyCode.Space))
@@ -113,7 +121,8 @@ public class MainPlayer : MonoBehaviour
                 MotherFOV.enabled = false;
                 rb.velocity = Vector2.zero;
                 rb = currentHumanBody;
-                currentHumanAgent.isStopped = true;
+                currentHumanAgent.updatePosition = true;
+                //currentHumanAgent.isStopped = true;
                 ghostGameObject.SetActive(false);
             }
             rb.MovePosition(rb.position + (movement * speed * Time.fixedDeltaTime));
@@ -152,7 +161,8 @@ public class MainPlayer : MonoBehaviour
                 MotherFOV.enabled = true;
                 rb.velocity = Vector2.zero;
                 rb = ghostBody;
-                currentHumanAgent.isStopped = false;
+                currentHumanAgent.updatePosition = false;
+                //currentHumanAgent.isStopped = false;
                 ghostGameObject.SetActive(true);
             }
             if (rb != toyCarBody)

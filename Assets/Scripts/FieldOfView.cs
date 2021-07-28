@@ -61,8 +61,8 @@ public class FieldOfView : MonoBehaviour
                 //Debug.Log("Yes");
                 if (ghostDetected == false)
                 {
-                    ghostDetected = true;
                     onDamageGhost.Invoke();
+                    ghostDetected = true;
                     Debug.Log("Entered");
                 }
 
@@ -75,10 +75,10 @@ public class FieldOfView : MonoBehaviour
                 
             }
 
-            if (countNumRayDectectsGhost == 0)
+            if (countNumRayDectectsGhost == 0 & ghostDetected == true)
             {
-                ghostDetected = false;
                 onStopDamageGhost.Invoke();
+                ghostDetected = false;
             }
 
             vertices[vertexIndex] = vertex;
