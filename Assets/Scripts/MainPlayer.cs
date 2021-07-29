@@ -121,8 +121,8 @@ public class MainPlayer : MonoBehaviour
                 MotherFOV.enabled = false;
                 rb.velocity = Vector2.zero;
                 rb = currentHumanBody;
-                currentHumanAgent.updatePosition = true;
-                //currentHumanAgent.isStopped = true;
+                currentHumanAgent.isStopped = true;
+                currentHumanAgent.updatePosition = false;
                 ghostGameObject.SetActive(false);
             }
             rb.MovePosition(rb.position + (movement * speed * Time.fixedDeltaTime));
@@ -161,8 +161,8 @@ public class MainPlayer : MonoBehaviour
                 MotherFOV.enabled = true;
                 rb.velocity = Vector2.zero;
                 rb = ghostBody;
-                currentHumanAgent.updatePosition = false;
-                //currentHumanAgent.isStopped = false;
+                currentHumanAgent.isStopped = false;
+                currentHumanAgent.updatePosition = true;
                 ghostGameObject.SetActive(true);
             }
             if (rb != toyCarBody)
