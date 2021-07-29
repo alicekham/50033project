@@ -26,7 +26,7 @@ public class MotherController : MonoBehaviour
         newposn = motherBody.transform.localPosition;
         dir = newposn - posn;
         posn = newposn;
-        Debug.Log(dir);
+        // Debug.Log(dir);
         fieldOfView.SetDirection(dir);
         fieldOfView.SetOrigin(transform.position);
     
