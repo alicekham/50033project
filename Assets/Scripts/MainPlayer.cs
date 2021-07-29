@@ -37,12 +37,17 @@ public class MainPlayer : MonoBehaviour
     public UnityEvent onPossess;
     public UnityEvent onStopPossess;
 
+    private Transform rbTransform;
+
 
     // Start is called before the first frame update
     void Start()
     {
         ghostBody.isKinematic = true;
         rb = ghostBody;
+        rbTransform = GetComponent<Transform>();
+        rbTransform.position = ghostBody.transform.position;
+        Debug.Log("rbTransform: " + rbTransform);
     }
 
     void Update()
@@ -125,6 +130,8 @@ public class MainPlayer : MonoBehaviour
                 currentHumanAgent.updatePosition = false;
                 ghostGameObject.SetActive(false);
             }
+            rbTransform.position = rb.transform.position;
+            Debug.Log("rbTransform: " + rbTransform);
             rb.MovePosition(rb.position + (movement * speed * Time.fixedDeltaTime));
         }
 
@@ -167,6 +174,8 @@ public class MainPlayer : MonoBehaviour
             }
             if (rb != toyCarBody)
             {
+                rbTransform.position = rb.transform.position;
+                Debug.Log("rbTransform: " + rbTransform);
                 rb.MovePosition(rb.position + (movement * speed * Time.fixedDeltaTime));
             }
         }
@@ -180,15 +189,9 @@ public class MainPlayer : MonoBehaviour
                 rb = ghostBody;
                 ghostGameObject.SetActive(true);
             }
+            rbTransform.position = rb.transform.position;
+            Debug.Log("rbTransform: " + rbTransform);
             rb.MovePosition(rb.position + (movement * speed * Time.fixedDeltaTime));
-        }
-    }
-    void OnCollisionEnter2D(Collision2D other)
-    {
-        Debug.Log("Collision occured!");
-        if (other.gameObject.CompareTag("Ghost"))
-        {
-            Debug.Log("Collided with Chost");
         }
     }
 }
