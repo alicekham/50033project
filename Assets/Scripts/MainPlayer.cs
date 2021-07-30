@@ -127,9 +127,11 @@ public class MainPlayer : MonoBehaviour
                 rb.velocity = Vector2.zero;
                 rb = currentHumanBody;
                 currentHumanAgent.isStopped = true;
-                currentHumanAgent.updatePosition = false;
+                // currentHumanAgent.updatePosition = false;
                 ghostGameObject.SetActive(false);
             }
+
+            // for camera
             rbTransform.position = rb.transform.position;
             Debug.Log("rbTransform: " + rbTransform);
             rb.MovePosition(rb.position + (movement * speed * Time.fixedDeltaTime));
@@ -169,7 +171,7 @@ public class MainPlayer : MonoBehaviour
                 rb.velocity = Vector2.zero;
                 rb = ghostBody;
                 currentHumanAgent.isStopped = false;
-                currentHumanAgent.updatePosition = true;
+                // currentHumanAgent.updatePosition = true;
                 ghostGameObject.SetActive(true);
             }
             if (rb != toyCarBody)
