@@ -14,11 +14,17 @@ public class SpiritBar : MonoBehaviour
     //Determine whether to decrease Spirit
     bool decreaseSpirit = false;
 
+    private AudioSource detectAudio;
+
     private void Awake()
     {
         spirit = new Spirit(gameConstants);
 
         barImage = transform.Find("Spirit").GetComponent<Image>();
+    }
+
+    private void Start() {
+        detectAudio = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -27,12 +33,15 @@ public class SpiritBar : MonoBehaviour
         {
             spirit.Update();
             barImage.fillAmount = spirit.GetSpiritNormalised();
+            detectAudio.PlayOneShot(detectAudio.clip);
         }
+
     }
 
     public void enableDecreaseSpirit()
     {
         decreaseSpirit = true;
+      
     }
 
     public void disableDecreaseSpirit()
@@ -47,6 +56,7 @@ public class SpiritBar : MonoBehaviour
         private int Max_Spirit;
         private float currentPlayerSpirit;
         private float spirit_DecreaseRate;
+
 
         public Spirit(GameConstants gameConstants)
         {
@@ -63,6 +73,7 @@ public class SpiritBar : MonoBehaviour
 
         public float GetSpiritNormalised()
         {
+
             return currentPlayerSpirit / Max_Spirit;
         }
     }

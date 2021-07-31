@@ -40,6 +40,7 @@ public class MainPlayer : MonoBehaviour
     private Transform rbTransform;
 
 
+     private AudioSource possessAudio;
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +49,7 @@ public class MainPlayer : MonoBehaviour
         rbTransform = GetComponent<Transform>();
         rbTransform.position = ghostBody.transform.position;
         Debug.Log("rbTransform: " + rbTransform);
+        possessAudio = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -68,10 +70,12 @@ public class MainPlayer : MonoBehaviour
                 if (i == 0) gameConstants.isMother = true;
                 if (i == 1) gameConstants.isButler = true;
                 if (i == 2) gameConstants.isDaughter = true;
+                possessAudio.PlayOneShot(possessAudio.clip);
             }
             if (Input.GetKeyDown(KeyCode.Space) && distWithToyCar < 1.2f)
             {
                 isToyCarBody = true;
+                possessAudio.PlayOneShot(possessAudio.clip);
             }
 
             if (rb.CompareTag("Human") && Input.GetKeyDown(KeyCode.Space)) {

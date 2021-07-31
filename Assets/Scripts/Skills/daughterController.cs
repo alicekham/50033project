@@ -24,6 +24,8 @@ public class daughterController : MonoBehaviour
     public Rigidbody2D basketballBody;
     private string throwdir;
     public float throwspeed = 5;
+
+    private AudioSource bounceSound;
     
 
     GameObject GetChildWithName(string name)
@@ -46,6 +48,7 @@ public class daughterController : MonoBehaviour
     posn = daughterBody.transform.localPosition;
     basketball = GetChildWithName("Basketball Holder");
     basketballBody = basketball.GetComponent<Rigidbody2D>();
+    bounceSound = GetComponent<AudioSource>();
 
     }
 
@@ -115,10 +118,12 @@ public class daughterController : MonoBehaviour
             
             if (throwdir == "up")
             {
+                bounceSound.PlayOneShot(bounceSound.clip);
                 basketball.transform.localPosition = new Vector3(0, 0.5f, 0);
                 for (int i = 0; i < 7; i++)
                 {
                     //basketballBody.AddForce(Vector2.up * throwspeed, ForceMode2D.Impulse);
+                    
                     basketball.transform.localPosition += new Vector3(0, 0.25f, 0);
                     yield return new WaitForSeconds(0.05f);
                 }
@@ -127,10 +132,12 @@ public class daughterController : MonoBehaviour
             }
             else if (throwdir == "down")
             {
+                bounceSound.PlayOneShot(bounceSound.clip);
                 basketball.transform.localPosition = new Vector3(0, -0.5f, 0);
                 for (int i = 0; i < 7; i++)
                 {
                     //basketballBody.AddForce(Vector2.up * throwspeed, ForceMode2D.Impulse);
+                    
                     basketball.transform.localPosition += new Vector3(0, -0.25f, 0);
                     yield return new WaitForSeconds(0.05f);
                 }
@@ -139,10 +146,12 @@ public class daughterController : MonoBehaviour
             }
             else if (throwdir == "left")
             {
+                bounceSound.PlayOneShot(bounceSound.clip);
                 basketball.transform.localPosition = new Vector3(-0.5f, 0, 0);
                 for (int i = 0; i < 7; i++)
                 {
                     //basketballBody.AddForce(Vector2.up * throwspeed, ForceMode2D.Impulse);
+                    
                     basketball.transform.localPosition += new Vector3(-0.25f, 0, 0);
                     yield return new WaitForSeconds(0.05f);
                 }
@@ -151,10 +160,12 @@ public class daughterController : MonoBehaviour
             }
             else
             {
+                bounceSound.PlayOneShot(bounceSound.clip);
                 basketball.transform.localPosition = new Vector3(0.5f, 0, 0);
                 for (int i = 0; i < 7; i++)
                 {
                     //basketballBody.AddForce(Vector2.up * throwspeed, ForceMode2D.Impulse);
+                    
                     basketball.transform.localPosition += new Vector3(0.25f, 0, 0);
                     yield return new WaitForSeconds(0.05f);
                 }

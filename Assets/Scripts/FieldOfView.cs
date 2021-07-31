@@ -16,6 +16,7 @@ public class FieldOfView : MonoBehaviour
     public UnityEvent onStopDamageGhost;
     private bool ghostDetected = false;
 
+
     // Start is called before the first frame update
     private void Start() {
         ghostBody = GameObject.FindGameObjectsWithTag("Ghost")[0];
@@ -64,6 +65,8 @@ public class FieldOfView : MonoBehaviour
                     onDamageGhost.Invoke();
                     ghostDetected = true;
                     Debug.Log("Entered");
+                    
+                   
                 }
 
             }
@@ -79,6 +82,7 @@ public class FieldOfView : MonoBehaviour
             {
                 onStopDamageGhost.Invoke();
                 ghostDetected = false;
+                
             }
 
             vertices[vertexIndex] = vertex;
