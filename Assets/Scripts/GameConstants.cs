@@ -43,6 +43,6 @@ public class GameConstants : ScriptableObject
     //Body Boolean
     public bool isMother = false;
     public bool isButler = false;
-    public bool isDaughter = false;
+    public bool isSister = false;
 
 }

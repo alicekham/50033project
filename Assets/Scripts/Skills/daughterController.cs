@@ -104,7 +104,7 @@ public class daughterController : MonoBehaviour
         }
 
         //basketball throwing
-        if (gameConstants.isDaughter == true)
+        if (gameConstants.isSister == true)
         {
             if (Input.GetKeyDown("m"))
             {

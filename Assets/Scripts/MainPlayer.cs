@@ -33,6 +33,8 @@ public class MainPlayer : MonoBehaviour
     private float distWithToyCar;
 
     public MeshRenderer MotherFOV;
+    public MeshRenderer ButlerFOV;
+    public MeshRenderer SisterFOV;
 
     public UnityEvent onPossess;
     public UnityEvent onStopPossess;
@@ -69,7 +71,7 @@ public class MainPlayer : MonoBehaviour
                 currentHumanAgent = humanAgent[i];
                 if (i == 0) gameConstants.isMother = true;
                 if (i == 1) gameConstants.isButler = true;
-                if (i == 2) gameConstants.isDaughter = true;
+                if (i == 2) gameConstants.isSister = true;
                 possessAudio.PlayOneShot(possessAudio.clip);
             }
             if (Input.GetKeyDown(KeyCode.Space) && distWithToyCar < 1.2f)
@@ -83,7 +85,7 @@ public class MainPlayer : MonoBehaviour
                 ishumanBody = false;
                 gameConstants.isMother = false;
                 gameConstants.isButler = false;
-                gameConstants.isDaughter = false;
+                gameConstants.isSister = false;
                 ghostBody.transform.position = currentHumanBody.transform.position - Vector3.right;
             }
             if (rb.CompareTag("Object") && Input.GetKeyDown(KeyCode.Space))
@@ -127,7 +129,9 @@ public class MainPlayer : MonoBehaviour
             if (rb == ghostBody)
             {
                 onPossess.Invoke();
-                MotherFOV.enabled = false;
+                if (gameConstants.isMother) MotherFOV.enabled = false;
+                if (gameConstants.isButler) ButlerFOV.enabled = false;
+                if (gameConstants.isSister) SisterFOV.enabled = false;
                 rb.velocity = Vector2.zero;
                 rb = currentHumanBody;
                 currentHumanAgent.isStopped = true;
@@ -171,7 +175,9 @@ public class MainPlayer : MonoBehaviour
             if (rb == currentHumanBody)
             {
                 onStopPossess.Invoke();
-                MotherFOV.enabled = true;
+                if (!gameConstants.isMother) MotherFOV.enabled = true;
+                if (!gameConstants.isButler) ButlerFOV.enabled = true;
+                if (!gameConstants.isSister) SisterFOV.enabled = true;
                 rb.velocity = Vector2.zero;
                 rb = ghostBody;
                 currentHumanAgent.isStopped = false;
