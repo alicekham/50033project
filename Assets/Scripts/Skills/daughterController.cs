@@ -127,6 +127,7 @@ public class daughterController : MonoBehaviour
                     basketball.transform.localPosition += new Vector3(0, 0.25f, 0);
                     yield return new WaitForSeconds(0.05f);
                 }
+                basketball.transform.localPosition = new Vector3(0, 0, 0);
                 basketball.SetActive(false);
                 yield break;
             }
@@ -141,6 +142,7 @@ public class daughterController : MonoBehaviour
                     basketball.transform.localPosition += new Vector3(0, -0.25f, 0);
                     yield return new WaitForSeconds(0.05f);
                 }
+                basketball.transform.localPosition = new Vector3(0, 0, 0);
                 basketball.SetActive(false);
                 yield break;
             }
@@ -155,6 +157,7 @@ public class daughterController : MonoBehaviour
                     basketball.transform.localPosition += new Vector3(-0.25f, 0, 0);
                     yield return new WaitForSeconds(0.05f);
                 }
+                basketball.transform.localPosition = new Vector3(0, 0, 0);
                 basketball.SetActive(false);
                 yield break;
             }
@@ -169,6 +172,7 @@ public class daughterController : MonoBehaviour
                     basketball.transform.localPosition += new Vector3(0.25f, 0, 0);
                     yield return new WaitForSeconds(0.05f);
                 }
+                basketball.transform.localPosition = new Vector3(0, 0, 0);
                 basketball.SetActive(false);
                 yield break;
             } 

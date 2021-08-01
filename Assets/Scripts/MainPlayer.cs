@@ -50,7 +50,7 @@ public class MainPlayer : MonoBehaviour
         rb = ghostBody;
         rbTransform = GetComponent<Transform>();
         rbTransform.position = ghostBody.transform.position;
-        Debug.Log("rbTransform: " + rbTransform);
+        //Debug.Log("rbTransform: " + rbTransform);
         possessAudio = GetComponent<AudioSource>();
     }
 
@@ -141,7 +141,7 @@ public class MainPlayer : MonoBehaviour
 
             // for camera
             rbTransform.position = rb.transform.position;
-            Debug.Log("rbTransform: " + rbTransform);
+            //Debug.Log("rbTransform: " + rbTransform);
             rb.MovePosition(rb.position + (movement * speed * Time.fixedDeltaTime));
         }
 
@@ -187,7 +187,7 @@ public class MainPlayer : MonoBehaviour
             if (rb != toyCarBody)
             {
                 rbTransform.position = rb.transform.position;
-                Debug.Log("rbTransform: " + rbTransform);
+                //Debug.Log("rbTransform: " + rbTransform);
                 rb.MovePosition(rb.position + (movement * speed * Time.fixedDeltaTime));
             }
         }
@@ -202,7 +202,7 @@ public class MainPlayer : MonoBehaviour
                 ghostGameObject.SetActive(true);
             }
             rbTransform.position = rb.transform.position;
-            Debug.Log("rbTransform: " + rbTransform);
+            //Debug.Log("rbTransform: " + rbTransform);
             rb.MovePosition(rb.position + (movement * speed * Time.fixedDeltaTime));
         }
     }

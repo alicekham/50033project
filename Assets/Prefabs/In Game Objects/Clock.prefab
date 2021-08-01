@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1330670408124570847}
   - component: {fileID: 1330670408124570846}
-  m_Layer: 0
+  - component: {fileID: 3185537049986491608}
+  m_Layer: 6
   m_Name: Clock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,6 +85,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &3185537049986491608
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330670408124570845}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1330670409306594417
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,7 +116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1330670409306594418}
   - component: {fileID: 1330670409306594419}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Battery
   m_TagString: Untagged
   m_Icon: {fileID: 0}

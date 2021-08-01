@@ -6,26 +6,99 @@ public class GrabController : MonoBehaviour
 {
     public Transform grabDetect;
     public Transform boxHolder;
+    public GameConstants gameConstants;
     public float rayDist = 2;
-    
+
+    public GameObject bookObject;
+    private float distWithBook;
+    private bool holdBook = false;
+
+    public GameObject gearObject;
+    private float distWithGear;
+    private bool holdGear = false;
+
+    public GameObject batteryObject;
+    private float distWithBattery;
+    private bool holdBattery = false;
+
+    private int runOneTime = 0;
+
     // Update is called once per frame
     void Update()
     {
-        RaycastHit2D grabCheck = Physics2D.Raycast(grabDetect.position, Vector2.right * transform.localScale, rayDist);
+        //RaycastHit2D grabCheck = Physics2D.Raycast(grabDetect.position, Vector2.right * transform.localScale, rayDist);
+        distWithBook = Vector2.Distance(bookObject.transform.position, grabDetect.transform.position);
+        distWithGear = Vector2.Distance(gearObject.transform.position, grabDetect.transform.position);
+        distWithBattery = Vector2.Distance(batteryObject.transform.position, grabDetect.transform.position);
 
-        if (grabCheck.collider != null && grabCheck.collider.tag == "grabbable") {
+        if (distWithBook <= 1f & gameConstants.isButler) {
 
-            if (Input.GetKey(KeyCode.B))
-            {
-                grabCheck.collider.gameObject.transform.parent = boxHolder;
-                grabCheck.collider.gameObject.transform.position = boxHolder.position;
-                grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+            if (Input.GetKeyDown(KeyCode.B)) {
+                if (holdBook) holdBook = false;
+                else if (!holdBook) holdBook = true;
+
+                if (holdBook)
+                {
+                    bookObject.transform.parent = boxHolder;
+                    bookObject.transform.position = boxHolder.position;
+                }
+                else if (!holdBook)
+                {
+                    bookObject.transform.parent = null;
+                    //grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
+                }
             }
-            else
+        }
+
+        else if (distWithGear <= 1f & gameConstants.isButler)
+        {
+
+            if (Input.GetKeyDown(KeyCode.B))
             {
-                grabCheck.collider.gameObject.transform.parent=null;
-                grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
+                if (holdGear) holdGear = false;
+                else if (!holdGear) holdGear = true;
+
+                if (holdGear)
+                {
+                    gearObject.transform.parent = boxHolder;
+                    gearObject.transform.position = boxHolder.position;
+                }
+                else if (!holdGear)
+                {
+                    gearObject.transform.parent = null;
+                    //grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
+                }
             }
+        }
+
+        else if (distWithBattery <= 1f & gameConstants.isButler)
+        {
+
+            if (Input.GetKeyDown(KeyCode.B))
+            {
+                if (holdBattery) {
+                    holdBattery = false;
+                    Debug.Log("dropping Battery");
+                }
+                else if (!holdBattery) {
+                    holdBattery = true;
+                    Debug.Log("holding Battery");
+                }
+
+                if (holdBattery)
+                {
+                    batteryObject.transform.parent = boxHolder;
+                    batteryObject.transform.position = boxHolder.position;
+                    //Debug.Log("Battery moving with me");
+                }
+                else if (!holdBattery)
+                {
+                    batteryObject.transform.parent = null;
+                    //Debug.Log("Battery disowned");
+                    //grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
+                }
+
+            } 
         }
     }
 }
