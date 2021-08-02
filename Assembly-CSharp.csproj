@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Skills\motherController.cs" />
+     <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\Skills\PlayerController.cs" />
      <Compile Include="Assets\Scripts\GameEvent.cs" />
      <Compile Include="Assets\Scripts\Skills\GrabController.cs" />
@@ -49,12 +50,14 @@
      <Compile Include="Assets\Scripts\SpiritBar.cs" />
      <Compile Include="Assets\Scripts\GameConstants.cs" />
      <Compile Include="Assets\Scripts\FieldOfView.cs" />
+     <Compile Include="Assets\Scripts\soundController.cs" />
      <Compile Include="Assets\Scripts\Skills\doorsController.cs" />
      <Compile Include="Assets\Scripts\Skills\doorVertical.cs" />
      <Compile Include="Assets\Scripts\GhostController.cs" />
      <Compile Include="Assets\Scripts\MainPlayer.cs" />
      <Compile Include="Assets\Scripts\Skills\daughterController.cs" />
-     <Compile Include="Assets\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\DoorA.cs" />
+     <Compile Include="Assets\Scripts\Open_Cabinet.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
