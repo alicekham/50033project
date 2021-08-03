@@ -12,6 +12,7 @@ TagManager:
   - mother
   - daughter
   - door
+  - Object
   layers:
   - Default
   - TransparentFX

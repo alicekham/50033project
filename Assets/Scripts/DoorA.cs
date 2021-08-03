@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class DoorA : MonoBehaviour
 {
     private NavMeshObstacle doorObstacle;
+    public GameObject doorObject;
     Animator doorAnimator;
     // private AudioSource openSound;
     public Rigidbody2D mumBody;
@@ -15,9 +16,10 @@ public class DoorA : MonoBehaviour
     void Start()
     {
         doorObstacle = GetComponent<NavMeshObstacle>();
-        doorAnimator = GetComponent<Animator>();
+        // doorAnimator = GetComponent<Animator>();
         // openSound = GetComponent<AudioSource>();
         doorBody = GetComponent<Rigidbody2D>();
+        doorObject = GetComponent<GameObject>();
         doorObstacle.carving = true;
     }
 
@@ -25,11 +27,12 @@ public class DoorA : MonoBehaviour
     void Update()
     {
         distFromMum = Vector2.Distance(mumBody.transform.position, doorBody.transform.position);
-        Debug.Log("distFromMum: " + distFromMum);
-        if(Input.GetKeyDown("m") && distFromMum < 1.5f)
+        // Debug.Log("distFromMum: " + distFromMum);
+        if(Input.GetKeyDown("m") && distFromMum < 2.0f)
         {
             Debug.Log("mum is trying to open the door!");
-            doorAnimator.SetTrigger("Open");
+            doorObject.SetActive(false);
+            // doorAnimator.SetTrigger("Open");
             doorObstacle.carving = false;
         }
     }
