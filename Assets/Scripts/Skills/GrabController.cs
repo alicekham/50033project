@@ -21,7 +21,7 @@ public class GrabController : MonoBehaviour
     private float distWithBattery;
     private bool holdBattery = false;
 
-    private int runOneTime = 0;
+    //private int runOneTime = 0;
 
     // Update is called once per frame
     void Update()
