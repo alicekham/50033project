@@ -57,8 +57,6 @@
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\Skills\PlayerController.cs" />
     <Compile Include="Assets\Scripts\GameEvent.cs" />
-    <Compile Include="Assets\Scripts\OpenKitchen.cs" />
-    <Compile Include="Assets\Scripts\Doors.cs" />
     <Compile Include="Assets\Scripts\Patrol.cs" />
     <Compile Include="Assets\Scripts\Skills\GameObject_2.cs" />
     <Compile Include="Assets\Scripts\SpiritBar.cs" />
@@ -66,7 +64,6 @@
     <Compile Include="Assets\Scripts\Skills\clockController.cs" />
     <Compile Include="Assets\Scripts\Skills\doorsController.cs" />
     <Compile Include="Assets\Scripts\Skills\GrabController.cs" />
-    <Compile Include="Assets\Scripts\Open_Cabinet.cs" />
     <Compile Include="Assets\Scripts\GameEventListener.cs" />
     <Compile Include="Assets\Scripts\DoorA.cs" />
     <Compile Include="Assets\Scripts\Skills\doorHorizontal.cs" />
@@ -79,6 +76,8 @@
     <Compile Include="Assets\Scripts\MainPlayer.cs" />
     <Compile Include="Assets\Scripts\Skills\computerController.cs" />
     <Compile Include="Assets\Scripts\Skills\daughterController.cs" />
+    <Compile Include="Assets\Scripts\Openable_Furnitures.cs" />
+    <Compile Include="Assets\Scripts\Openable_Doors.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
