@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Doors : MonoBehaviour
+public class Openable_Doors : MonoBehaviour
 {
     [SerializeField] NavMeshObstacle[] doorObstacles;
     [SerializeField] GameObject[] doorObjects;
