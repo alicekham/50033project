@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class OpenKitchen : MonoBehaviour
+public class Openable_Furnitures : MonoBehaviour
 {
     [SerializeField] GameObject[] specs;
     [SerializeField] SpriteRenderer[] sprites;
@@ -27,7 +27,11 @@ public class OpenKitchen : MonoBehaviour
             distFromMum = Vector2.Distance(mumBody.transform.position, openBodies[i].transform.position);
             velocity = openBodies[i].transform.position - mumBody.transform.position;
             dir = velocity.normalized;
-            Debug.Log(openBodies[i].name + ": " + dir);
+            // Debug.Log(openBodies[i].name + ": " + dir);
+            if (i==5)
+            {
+                Debug.Log("distFromMum: " + distFromMum);
+            }
             if(Input.GetKeyDown("m") && distFromMum < 1.0f)
             {
                 // open the furniture --> change sprite of furniture
