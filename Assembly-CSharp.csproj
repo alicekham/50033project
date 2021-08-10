@@ -69,6 +69,7 @@
      <Compile Include="Assets\Scripts\LEVEL0\DialogueManager.cs" />
      <Compile Include="Assets\Scripts\LEVEL0\Dialogue.cs" />
      <Compile Include="Assets\Scripts\LEVEL0\DialogueTrigger.cs" />
+     <Compile Include="Assets\bookManager.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
