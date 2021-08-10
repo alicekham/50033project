@@ -61,7 +61,14 @@
      <Compile Include="Assets\Scripts\Skills\computerController.cs" />
      <Compile Include="Assets\Scripts\Skills\daughterController.cs" />
      <Compile Include="Assets\Scripts\Openable_Doors.cs" />
-     <Compile Include="Assets\Scripts\LEVEL0\LEVEL0_MUM.cs" />
+     <Compile Include="Assets\Scripts\LEVEL0\LEVEL0_MotherController.cs" />
+     <Compile Include="Assets\Scripts\LEVEL0\LEVEL0_MainPlayer.cs" />
+     <Compile Include="Assets\Scripts\LEVEL0\LEVEL0_GhostController.cs" />
+     <Compile Include="Assets\Scripts\LEVEL0\LEVEL0_Patrol.cs" />
+     <Compile Include="Assets\Scripts\LEVEL0\LEVEL0_FieldOfView.cs" />
+     <Compile Include="Assets\Scripts\LEVEL0\DialogueManager.cs" />
+     <Compile Include="Assets\Scripts\LEVEL0\Dialogue.cs" />
+     <Compile Include="Assets\Scripts\LEVEL0\DialogueTrigger.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
