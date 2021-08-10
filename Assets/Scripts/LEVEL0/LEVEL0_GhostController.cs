@@ -12,15 +12,7 @@ public class LEVEL0_GhostController : MonoBehaviour
     public float maxSpeed = 40f;
     private Vector2 movement;
     private NavMeshAgent ghostAgent;
-
-    //private bool faceLeftState = false;
-    //private bool faceRightState = false;
-    //private bool faceUpState = false;
-    //private bool faceDownState = true;
-    // public float moveHorizontal;
-    // public float moveVertical;
     
-    // Start is called before the first frame update
     void Start()
     {
         //Set Framerate to 30 FPS
