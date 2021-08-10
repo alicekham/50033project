@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
-    public Text nameText;
     public Text dialogueText;
     private Queue<string> sentences;
 
@@ -17,8 +17,6 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        Debug.Log("Start conversation with " + dialogue.name);
-        nameText.text = dialogue.name;
         sentences.Clear();
 
         foreach(string sentence in dialogue.sentences)
@@ -44,5 +42,11 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         Debug.Log("End of conversation.");
+    }
+
+    public void SkipDialogue()
+    {
+        Debug.Log("Skip Storyline");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); 
     }
 }
