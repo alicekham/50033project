@@ -1,7 +1,43 @@
 fileFormatVersion: 2
 guid: d68d6cc7fb229414a93b1c39cc2f1520
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -564199490817269518
+    second: Conference_man_sit2_48x48_0
+  - first:
+      213: 7092642154642142132
+    second: Conference_man_sit2_48x48_1
+  - first:
+      213: -2057908666191633458
+    second: Conference_man_sit2_48x48_2
+  - first:
+      213: -1354989533595855163
+    second: Conference_man_sit2_48x48_3
+  - first:
+      213: 9136003235238111712
+    second: Conference_man_sit2_48x48_4
+  - first:
+      213: 1495997584198540250
+    second: Conference_man_sit2_48x48_5
+  - first:
+      213: -257855602800355115
+    second: Conference_man_sit2_48x48_6
+  - first:
+      213: 6572728573300758334
+    second: Conference_man_sit2_48x48_7
+  - first:
+      213: 252123001239667181
+    second: Conference_man_sit2_48x48_8
+  - first:
+      213: 1689204823325994701
+    second: Conference_man_sit2_48x48_9
+  - first:
+      213: 7574527903215445009
+    second: Conference_man_sit2_48x48_10
+  - first:
+      213: -8530335762797848322
+    second: Conference_man_sit2_48x48_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +77,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +111,297 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Conference_man_sit2_48x48_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 21
+        width: 48
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f061676d8f8b28f0800000000000000
+      internalID: -564199490817269518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conference_man_sit2_48x48_1
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 21
+        width: 48
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3f76216702e6260800000000000000
+      internalID: 7092642154642142132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conference_man_sit2_48x48_2
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 21
+        width: 48
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec3237ba8f6d073e0800000000000000
+      internalID: -2057908666191633458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conference_man_sit2_48x48_3
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 21
+        width: 48
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c695afb23c123de0800000000000000
+      internalID: -1354989533595855163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conference_man_sit2_48x48_4
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 21
+        width: 48
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e9ef2fa98a99ce70800000000000000
+      internalID: 9136003235238111712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conference_man_sit2_48x48_5
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 21
+        width: 48
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb1ffe60e9d2c410800000000000000
+      internalID: 1495997584198540250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conference_man_sit2_48x48_6
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 21
+        width: 48
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d89db702b9eb6cf0800000000000000
+      internalID: -257855602800355115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conference_man_sit2_48x48_7
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 21
+        width: 48
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e37d6a840d5073b50800000000000000
+      internalID: 6572728573300758334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conference_man_sit2_48x48_8
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 21
+        width: 48
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de18898a888bf7300800000000000000
+      internalID: 252123001239667181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conference_man_sit2_48x48_9
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 21
+        width: 48
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcee83746d2417710800000000000000
+      internalID: 1689204823325994701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conference_man_sit2_48x48_10
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 21
+        width: 48
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 114e0741ff02e1960800000000000000
+      internalID: 7574527903215445009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conference_man_sit2_48x48_11
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 21
+        width: 48
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef89f93c1d82e9980800000000000000
+      internalID: -8530335762797848322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -36,6 +36,11 @@ public class MainPlayer : MonoBehaviour
     public MeshRenderer ButlerFOV;
     public MeshRenderer SisterFOV;
 
+    public GameObject MotherLight;
+    public GameObject ButlerLight;
+    public GameObject SisterLight;
+    public GameObject TrainLight;
+
     public UnityEvent onPossess;
     public UnityEvent onStopPossess;
 
@@ -129,9 +134,21 @@ public class MainPlayer : MonoBehaviour
             if (rb == ghostBody)
             {
                 onPossess.Invoke();
-                if (gameConstants.isMother) MotherFOV.enabled = false;
-                if (gameConstants.isButler) ButlerFOV.enabled = false;
-                if (gameConstants.isSister) SisterFOV.enabled = false;
+                if (gameConstants.isMother)
+                {
+                    MotherFOV.enabled = false;
+                    MotherLight.SetActive(true);
+                }
+                if (gameConstants.isButler)
+                {
+                    ButlerFOV.enabled = false;
+                    ButlerLight.SetActive(true);
+                }
+                if (gameConstants.isSister)
+                {
+                    SisterFOV.enabled = false;
+                    SisterLight.SetActive(true);
+                }
                 rb.velocity = Vector2.zero;
                 rb = currentHumanBody;
                 currentHumanAgent.isStopped = true;
@@ -153,7 +170,9 @@ public class MainPlayer : MonoBehaviour
                 rb.velocity = Vector2.zero;
                 rb = toyCarBody;
                 ghostGameObject.SetActive(false);
-            }if (rb.position.x > 5.48f & rb.position.x < 9.88f)
+                TrainLight.SetActive(true);
+            }
+            if (rb.position.x > 5.48f & rb.position.x < 9.88f)
             {
                 rb.MovePosition(rb.position + (movement * speed * Time.fixedDeltaTime));
             }
@@ -175,9 +194,21 @@ public class MainPlayer : MonoBehaviour
             if (rb == currentHumanBody)
             {
                 onStopPossess.Invoke();
-                if (!gameConstants.isMother) MotherFOV.enabled = true;
-                if (!gameConstants.isButler) ButlerFOV.enabled = true;
-                if (!gameConstants.isSister) SisterFOV.enabled = true;
+                if (!gameConstants.isMother)
+                {
+                    MotherFOV.enabled = true;
+                    MotherLight.SetActive(false);
+                }
+                if (!gameConstants.isButler)
+                {
+                    ButlerFOV.enabled = true;
+                    ButlerLight.SetActive(false);
+                }
+                if (!gameConstants.isSister)
+                {
+                    SisterFOV.enabled = true;
+                    SisterLight.SetActive(false);
+                }
                 rb.velocity = Vector2.zero;
                 rb = ghostBody;
                 currentHumanAgent.isStopped = false;
@@ -200,6 +231,7 @@ public class MainPlayer : MonoBehaviour
                 rb.velocity = Vector2.zero;
                 rb = ghostBody;
                 ghostGameObject.SetActive(true);
+                TrainLight.SetActive(false);
             }
             rbTransform.position = rb.transform.position;
             //Debug.Log("rbTransform: " + rbTransform);

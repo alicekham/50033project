@@ -304,7 +304,7 @@ TextureImporter:
     second: 14_Basement_48x48_99
   - first:
       213: 3032467421008453846
-    second: 14_Basement_48x48_100
+    second: ArmChair
   - first:
       213: 6035973380877952749
     second: 14_Basement_48x48_101
@@ -437,6 +437,9 @@ TextureImporter:
   - first:
       213: -8123530513006549926
     second: 14_Basement_48x48_144
+  - first:
+      213: -1103792418269218502
+    second: 14_Basement_48x48_145
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1579,10 +1582,10 @@ TextureImporter:
       name: 14_Basement_48x48_50
       rect:
         serializedVersion: 2
-        x: 629
-        y: 1198
-        width: 77
-        height: 219
+        x: 672
+        y: 1200
+        width: 34
+        height: 93
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2626,7 +2629,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 14_Basement_48x48_100
+      name: ArmChair
       rect:
         serializedVersion: 2
         x: 304
@@ -3566,6 +3569,27 @@ TextureImporter:
       bones: []
       spriteID: a54a23ae90c634f80800000000000000
       internalID: -8123530513006549926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_48x48_145
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1200
+        width: 33
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a393b4bc4aa8ea0f0800000000000000
+      internalID: -1103792418269218502
       vertices: []
       indices: 
       edges: []
