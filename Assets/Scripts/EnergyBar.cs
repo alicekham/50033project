@@ -14,14 +14,14 @@ public class EnergyBar : MonoBehaviour
     //Determine whether to decrease Energy
     bool decreaseEnergy = false;
 
-    private void Awake()
+    void Awake()
     {
         energy = new Energy(gameConstants);
 
         barImage = transform.Find("Energy").GetComponent<Image>();
     }
 
-    private void Update()
+    void Update()
     {
         if (decreaseEnergy)
         {
@@ -54,9 +54,6 @@ public class EnergyBar : MonoBehaviour
             Max_Energy = gameConstants.Max_Energy;
             currentPlayerEnergy = gameConstants.currentPlayerEnergy;
             energy_DecreaseRate = gameConstants.energy_DecreaseRate;
-            Debug.Log(Max_Energy);
-            Debug.Log(currentPlayerEnergy);
-            Debug.Log(energy_DecreaseRate);
         }
 
         public void Update()

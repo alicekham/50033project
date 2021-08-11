@@ -46,8 +46,23 @@ public class MainPlayer : MonoBehaviour
 
     private Transform rbTransform;
 
+    public AudioSource Bark;
+    private AudioClip barkSound;
+    private int barkCounter = 0;
+    private bool BookFell = false;
+    private int barkCounter2 = 0;
 
-     private AudioSource possessAudio;
+    public GameObject GhostChatQuest1;
+    public GameObject GhostChatQuest2;
+    public GameObject GhostChatQuest3;
+
+    public GameObject Line3Ghost;
+    public GameObject Line4Ghost;
+    public GameObject Line5Ghost;
+    public GameObject Line2;
+    public GameObject Line4;
+
+    private AudioSource possessAudio;
     // Start is called before the first frame update
     void Start()
     {
@@ -57,6 +72,7 @@ public class MainPlayer : MonoBehaviour
         rbTransform.position = ghostBody.transform.position;
         //Debug.Log("rbTransform: " + rbTransform);
         possessAudio = GetComponent<AudioSource>();
+        barkSound = Bark.GetComponent<AudioSource>().clip;
     }
 
     void Update()
@@ -184,9 +200,39 @@ public class MainPlayer : MonoBehaviour
                 }
                 else if (rb.position.x > 9.88f)
                 {
+                    barkCounter++;
+                    BookFell = true;
                     bookObject.SetActive(true);
+                    if (barkCounter == 1) {
+                        GhostChatQuest1.SetActive(true);
+                        GhostChatQuest2.SetActive(false);
+                        GhostChatQuest3.SetActive(false);
+
+                        Line3Ghost.SetActive(false);
+                        Line4Ghost.SetActive(true);
+                        Bark.PlayOneShot(barkSound);
+                        Line2.SetActive(false);
+                        Line4.SetActive(true);
+                    }
+
                 }
             }
+        }
+        if (BookFell)
+        {
+            barkCounter2++;
+            Debug.Log(barkCounter2);
+            if (barkCounter2 == 120)
+            {
+                GhostChatQuest1.SetActive(true);
+                GhostChatQuest2.SetActive(false);
+                GhostChatQuest3.SetActive(false);
+
+                Bark.PlayOneShot(barkSound);
+                Line4Ghost.SetActive(false);
+                Line5Ghost.SetActive(true);
+            }
+
         }
 
         if (ishumanBody == false)

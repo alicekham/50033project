@@ -21,6 +21,10 @@ public class GrabController : MonoBehaviour
     private float distWithBattery;
     private bool holdBattery = false;
 
+    public GameObject glassesObject;
+    private float distWithGlasses;
+    private bool holdGlasses = false;
+
     //private int runOneTime = 0;
 
     // Update is called once per frame
@@ -29,11 +33,15 @@ public class GrabController : MonoBehaviour
         //RaycastHit2D grabCheck = Physics2D.Raycast(grabDetect.position, Vector2.right * transform.localScale, rayDist);
         distWithBook = Vector2.Distance(bookObject.transform.position, grabDetect.transform.position);
         distWithGear = Vector2.Distance(gearObject.transform.position, grabDetect.transform.position);
+        distWithGlasses = Vector2.Distance(glassesObject.transform.position, grabDetect.transform.position);
         distWithBattery = Vector2.Distance(batteryObject.transform.position, grabDetect.transform.position);
 
-        if (distWithBook <= 1f & gameConstants.isButler) {
 
-            if (Input.GetKeyDown(KeyCode.B)) {
+        if (distWithBook <= 1f & gameConstants.isButler)
+        {
+
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
                 if (holdBook) holdBook = false;
                 else if (!holdBook) holdBook = true;
 
@@ -53,7 +61,7 @@ public class GrabController : MonoBehaviour
         else if (distWithGear <= 1f & gameConstants.isButler)
         {
 
-            if (Input.GetKeyDown(KeyCode.B))
+            if (Input.GetKeyDown(KeyCode.Return))
             {
                 if (holdGear) holdGear = false;
                 else if (!holdGear) holdGear = true;
@@ -74,13 +82,15 @@ public class GrabController : MonoBehaviour
         else if (distWithBattery <= 1f & gameConstants.isButler)
         {
 
-            if (Input.GetKeyDown(KeyCode.B))
+            if (Input.GetKeyDown(KeyCode.Return))
             {
-                if (holdBattery) {
+                if (holdBattery)
+                {
                     holdBattery = false;
                     Debug.Log("dropping Battery");
                 }
-                else if (!holdBattery) {
+                else if (!holdBattery)
+                {
                     holdBattery = true;
                     Debug.Log("holding Battery");
                 }
@@ -98,7 +108,39 @@ public class GrabController : MonoBehaviour
                     //grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
                 }
 
-            } 
+            }
+        }
+
+        else if (distWithGlasses <= 1f & gameConstants.isButler)
+        {
+
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                if (holdGlasses)
+                {
+                    holdGlasses = false;
+                    Debug.Log("dropping Battery");
+                }
+                else if (!holdGlasses)
+                {
+                    holdGlasses = true;
+                    Debug.Log("holding Battery");
+                }
+
+                if (holdGlasses)
+                {
+                    glassesObject.transform.parent = boxHolder;
+                    glassesObject.transform.position = boxHolder.position;
+                    //Debug.Log("Battery moving with me");
+                }
+                else if (!holdGlasses)
+                {
+                    glassesObject.transform.parent = null;
+                    //Debug.Log("Battery disowned");
+                    //grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
+                }
+
+            }
         }
     }
 }

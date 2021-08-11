@@ -1,13 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class bookManager : MonoBehaviour
+public class GrandmaController : MonoBehaviour
 {
     public Rigidbody2D ghostBody;
     private float distWithGhost;
-    private int counter2 = 0;
+    private int counter = 0;
 
     public AudioSource Bark;
     private AudioClip barkSound;
@@ -19,9 +18,7 @@ public class bookManager : MonoBehaviour
 
     public GameObject Line1;
     public GameObject Line2;
-    public GameObject Line2Ghost;
-    public GameObject Line3Ghost;
-
+    public GameObject Line1Ghost;
 
     // Start is called before the first frame update
     void Start()
@@ -33,33 +30,21 @@ public class bookManager : MonoBehaviour
     void Update()
     {
         distWithGhost = Vector2.Distance(this.transform.position, ghostBody.transform.position);
-        
-        if (distWithGhost < 1.5)
+
+        if (distWithGhost < 1.5f)
         {
-            counter2++;
-            if (counter2 == 1)
+            counter++;
+            if (counter == 1)
             {
-                GhostChatQuest1.SetActive(true);
+                GhostChatQuest1.SetActive(false);
                 GhostChatQuest2.SetActive(false);
-                GhostChatQuest3.SetActive(false);
-                
+                GhostChatQuest3.SetActive(true);
+
                 Line1.SetActive(false);
                 Line2.SetActive(true);
+                Line1Ghost.SetActive(true);
                 Bark.PlayOneShot(barkSound);
-                Line2Ghost.SetActive(true);
             }
-
-            if (counter2 == 150)
-            {
-                GhostChatQuest1.SetActive(true);
-                GhostChatQuest2.SetActive(false);
-                GhostChatQuest3.SetActive(false);
-
-                Line2Ghost.SetActive(false);
-                Bark.PlayOneShot(barkSound);
-                Line3Ghost.SetActive(true);
-            }
-
-        } 
+        }
     }
 }

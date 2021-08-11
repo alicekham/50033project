@@ -106,7 +106,7 @@ public class daughterController : MonoBehaviour
         //basketball throwing
         if (gameConstants.isSister == true)
         {
-            if (Input.GetKeyDown("m"))
+            if (Input.GetKeyDown(KeyCode.Return))
             {
                 basketball.SetActive(true);
                 StartCoroutine(throwBall());

@@ -27,7 +27,7 @@ public class Openable_Doors : MonoBehaviour
             // obstacle is present
             distFromMum = Vector2.Distance(mumBody.transform.position, doorBodies[i].transform.position);
 
-            if(Input.GetKeyDown("m") && distFromMum < 2.0f)
+            if(Input.GetKeyDown(KeyCode.Return) && distFromMum < 2.0f)
             {
                 Debug.Log("Mum opened a door!");
                 for (int j=0; j<doorBodies.Length; j++)
