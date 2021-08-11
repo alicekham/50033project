@@ -45,7 +45,7 @@ public class GrabController : MonoBehaviour
                 if (holdBook) holdBook = false;
                 else if (!holdBook) holdBook = true;
 
-                if (holdBook)
+                if (holdBook & bookObject.activeSelf == true)
                 {
                     bookObject.transform.parent = boxHolder;
                     bookObject.transform.position = boxHolder.position;
@@ -66,7 +66,7 @@ public class GrabController : MonoBehaviour
                 if (holdGear) holdGear = false;
                 else if (!holdGear) holdGear = true;
 
-                if (holdGear)
+                if (holdGear & gearObject.activeSelf == true)
                 {
                     gearObject.transform.parent = boxHolder;
                     gearObject.transform.position = boxHolder.position;
@@ -95,7 +95,7 @@ public class GrabController : MonoBehaviour
                     Debug.Log("holding Battery");
                 }
 
-                if (holdBattery)
+                if (holdBattery & batteryObject.activeSelf == true)
                 {
                     batteryObject.transform.parent = boxHolder;
                     batteryObject.transform.position = boxHolder.position;
@@ -119,15 +119,15 @@ public class GrabController : MonoBehaviour
                 if (holdGlasses)
                 {
                     holdGlasses = false;
-                    Debug.Log("dropping Battery");
+                    Debug.Log("dropping Glasses");
                 }
                 else if (!holdGlasses)
                 {
                     holdGlasses = true;
-                    Debug.Log("holding Battery");
+                    Debug.Log("holding Glasses");
                 }
 
-                if (holdGlasses)
+                if (holdGlasses & glassesObject.activeSelf == true)
                 {
                     glassesObject.transform.parent = boxHolder;
                     glassesObject.transform.position = boxHolder.position;

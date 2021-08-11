@@ -62,7 +62,6 @@ public class Openable_Furnitures : MonoBehaviour
             if (specs[0].activeSelf == true)
             {
                 counterList[0]++;
-                Debug.Log(counterList);
                 if (counterList[0] == 1)
                 {
                     GhostChatQuest1.SetActive(false);
