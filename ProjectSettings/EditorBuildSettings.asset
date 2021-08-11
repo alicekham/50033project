@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/STORYLINE.unity
     guid: bb84a6585bfd1cb4a86381d783373628
   - enabled: 1
-    path: Assets/Scenes/TUTORIAL_MOVE.unity
+    path: Assets/Scenes/TUTORIAL_MUM.unity
     guid: bf7cd959a55ecb647b2ae230973312a0
   m_configObjects: {}
