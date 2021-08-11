@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
-public class LEVEL0_MainPlayer : MonoBehaviour
+using UnityEngine.Experimental.Rendering.Universal; 
+public class MUM_MainPlayer : MonoBehaviour
 {
     public float speed;
     private Vector2 movement;
@@ -14,6 +14,7 @@ public class LEVEL0_MainPlayer : MonoBehaviour
     private float dist;
     private Transform rbTransform;
     private bool isHumanBody;
+    public Light2D GlobalLight;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +34,7 @@ public class LEVEL0_MainPlayer : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && dist<1.2f)
         {
             isHumanBody = true;
+            // GlobalLight.intensity = 0.8f;
         }
 
         if(rb.CompareTag("Human") && Input.GetKeyDown(KeyCode.Space)) {

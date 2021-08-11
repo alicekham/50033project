@@ -3,26 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class GhostController : MonoBehaviour
+public class MOVE_MainPlayer : MonoBehaviour
 {
-    // [SerializeField] private FieldOfView fieldOfView;
-    private Rigidbody2D ghostBody;
-    private SpriteRenderer ghostSprite;
     public float speed;
-    public float maxSpeed = 40f;
     private Vector2 movement;
+    private Rigidbody2D ghostBody;
     private NavMeshAgent ghostAgent;
-    
     // Start is called before the first frame update
     void Start()
     {
-        //Set Framerate to 30 FPS
-        Application.targetFrameRate = 30;
         ghostBody = GetComponent<Rigidbody2D>();
-        ghostSprite = GetComponent<SpriteRenderer>();
-        
+        ghostBody.isKinematic = true;
+
         ghostAgent = GetComponent<NavMeshAgent>();
         ghostAgent.updateRotation = false;
         ghostAgent.updateUpAxis = false;
+    }
+
+    // Movement
+    void FixedUpdate()
+    {
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
+        ghostBody.MovePosition(ghostBody.position + (movement * speed * Time.fixedDeltaTime));
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class LEVEL0_MotherController : MonoBehaviour
+public class HumanController : MonoBehaviour
 {
     private Rigidbody2D motherBody;
     private Animator motherAnimator;
