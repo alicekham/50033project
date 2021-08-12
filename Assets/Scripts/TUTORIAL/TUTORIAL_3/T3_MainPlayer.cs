@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class T2_MainPlayer : MonoBehaviour
+public class T3_MainPlayer : MonoBehaviour
 {
     public float speed;
     private Vector2 movement;
@@ -16,6 +16,7 @@ public class T2_MainPlayer : MonoBehaviour
     private bool isHumanBody;
     public NavMeshAgent humanAgent;
     public Collider2D humanCollider;
+
     public GameObject humanLight;
 
     // Start is called before the first frame update
@@ -65,13 +66,13 @@ public class T2_MainPlayer : MonoBehaviour
 
             humanAgent.enabled = true;
             humanCollider.enabled = true;
+
             // for camera
             rbTransform.position = rb.transform.position;
             //Debug.Log("rbTransform: " + rbTransform);
             rb.MovePosition(rb.position + (movement * speed * Time.fixedDeltaTime));
             rbTransform.position = rb.transform.position;
             humanLight.SetActive(true);
-            
         }
         
         if (isHumanBody == false)
@@ -85,6 +86,7 @@ public class T2_MainPlayer : MonoBehaviour
 
             humanAgent.enabled = false;
             humanCollider.enabled = false;
+
             // for camera
             rbTransform.position = rb.transform.position;
             //Debug.Log("rbTransform: " + rbTransform);

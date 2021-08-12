@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class T2_MainPlayer : MonoBehaviour
+public class T4_MainPlayer : MonoBehaviour
 {
     public float speed;
     private Vector2 movement;
@@ -71,7 +71,6 @@ public class T2_MainPlayer : MonoBehaviour
             rb.MovePosition(rb.position + (movement * speed * Time.fixedDeltaTime));
             rbTransform.position = rb.transform.position;
             humanLight.SetActive(true);
-            
         }
         
         if (isHumanBody == false)
