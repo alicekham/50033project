@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
 
-public class LEVEL0_MUM : MonoBehaviour
+public class T_MumController : MonoBehaviour
 {
     public float speed;
     private Vector2 movement;

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class LEVEL0_MainPlayer : MonoBehaviour
+public class T1_MainPlayer : MonoBehaviour
 {
     public float speed;
     private Vector2 movement;
