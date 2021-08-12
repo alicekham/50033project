@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\Skills\doorsController.cs" />
      <Compile Include="Assets\Scripts\TimelineController.cs" />
      <Compile Include="Assets\GrandmaController.cs" />
+     <Compile Include="Assets\FatherController.cs" />
      <Compile Include="Assets\Scripts\TimelineControllerR.cs" />
      <Compile Include="Assets\Scripts\TUTORIAL\TUTORIAL_2\T2_GhostController.cs" />
      <Compile Include="Assets\Scripts\Skills\GrabController.cs" />
@@ -75,12 +76,12 @@
      <Compile Include="Assets\Scripts\Skills\doorVertical.cs" />
      <Compile Include="Assets\QuestDropItemHere.cs" />
      <Compile Include="Assets\Scripts\GhostController.cs" />
+     <Compile Include="Assets\Scripts\TUTORIAL\TUTORIAL_1\T1_Pass.cs" />
      <Compile Include="Assets\Scripts\MainPlayer.cs" />
      <Compile Include="Assets\Scripts\Skills\computerController.cs" />
      <Compile Include="Assets\BatteryController.cs" />
      <Compile Include="Assets\Scripts\Skills\daughterController.cs" />
      <Compile Include="Assets\Scripts\Openable_Doors.cs" />
-     <Compile Include="Assets\Scripts\TUTORIAL\TUTORIAL_1\T1_Pass.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
