@@ -46,22 +46,30 @@
      <Compile Include="Assets\Scripts\SpiritBar.cs" />
      <Compile Include="Assets\Scripts\GameConstants.cs" />
      <Compile Include="Assets\Scripts\Skills\clockController.cs" />
+     <Compile Include="Assets\Scripts\LEVEL0\LEVEL0_MUM.cs" />
      <Compile Include="Assets\Scripts\Skills\doorsController.cs" />
+     <Compile Include="Assets\GrandmaController.cs" />
      <Compile Include="Assets\Scripts\Skills\GrabController.cs" />
      <Compile Include="Assets\Scripts\GameEventListener.cs" />
+     <Compile Include="Assets\GearController.cs" />
      <Compile Include="Assets\Scripts\DoorA.cs" />
      <Compile Include="Assets\Scripts\Skills\doorHorizontal.cs" />
      <Compile Include="Assets\Scripts\EnergyBar.cs" />
      <Compile Include="Assets\Scripts\MotherController.cs" />
+     <Compile Include="Assets\QuestDropItemHere3.cs" />
      <Compile Include="Assets\Scripts\FieldOfView.cs" />
+     <Compile Include="Assets\bookManager.cs" />
+     <Compile Include="Assets\QuestDropItemHere2.cs" />
+     <Compile Include="Assets\BrotherController.cs" />
      <Compile Include="Assets\Scripts\soundController.cs" />
      <Compile Include="Assets\Scripts\Skills\doorVertical.cs" />
+     <Compile Include="Assets\QuestDropItemHere.cs" />
      <Compile Include="Assets\Scripts\GhostController.cs" />
      <Compile Include="Assets\Scripts\MainPlayer.cs" />
      <Compile Include="Assets\Scripts\Skills\computerController.cs" />
+     <Compile Include="Assets\BatteryController.cs" />
      <Compile Include="Assets\Scripts\Skills\daughterController.cs" />
      <Compile Include="Assets\Scripts\Openable_Doors.cs" />
-     <Compile Include="Assets\Scripts\LEVEL0\LEVEL0_MUM.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
