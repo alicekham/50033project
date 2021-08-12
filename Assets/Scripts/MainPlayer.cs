@@ -116,27 +116,6 @@ public class MainPlayer : MonoBehaviour
                 ghostBody.transform.position = toyCarBody.transform.position - Vector3.left;
             }
         }
-
-        /*
-        dist = Vector2.Distance(humanBody[humanPossessed].transform.position, ghostBody.transform.position);
-        // Debug.Log(dist);
-
-        if (dist<1.2f)
-        {
-            //Debug.Log("less than 1.2f!");
-        }
-        
-        if(Input.GetKeyDown(KeyCode.Space) && dist<1.2f)
-        {
-            ishumanBody = true;
-        }
-
-        if(rb.CompareTag("Human") && Input.GetKeyDown(KeyCode.Space)) {
-            Debug.Log("Eject!");
-            ishumanBody = false;
-            ghostBody.transform.position = humanBody[humanPossessed].transform.position - Vector3.right;
-        }
-        */
     }
 
     // Movement
@@ -167,6 +146,7 @@ public class MainPlayer : MonoBehaviour
                 }
                 rb.velocity = Vector2.zero;
                 rb = currentHumanBody;
+                // currentHumanAgent.enabled = false;
                 currentHumanAgent.isStopped = true;
                 // currentHumanAgent.updatePosition = false;
                 ghostGameObject.SetActive(false);
@@ -257,6 +237,7 @@ public class MainPlayer : MonoBehaviour
                 }
                 rb.velocity = Vector2.zero;
                 rb = ghostBody;
+                // currentHumanAgent.enabled = true;
                 currentHumanAgent.isStopped = false;
                 // currentHumanAgent.updatePosition = true;
                 ghostGameObject.SetActive(true);
