@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Timeline;
 
 public class QuestDropItemHere3 : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public class QuestDropItemHere3 : MonoBehaviour
     public GameObject LineEndGhost;
     public GameObject Line3;
     public GameObject completedImg;
+
+    public TimelineController taskCompleteAnim;
 
     // Start is called before the first frame update
     void Start()
@@ -49,6 +52,7 @@ public class QuestDropItemHere3 : MonoBehaviour
                 completedImg.SetActive(true);
                 questItem.transform.position = questMat.transform.position;
                 questItem.transform.parent = null;
+                taskCompleteAnim.questComplete = true;
             }
         }
     }

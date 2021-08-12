@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Timeline;
 
 public class GrandmaController : MonoBehaviour
 {
@@ -19,6 +20,8 @@ public class GrandmaController : MonoBehaviour
     public GameObject Line1;
     public GameObject Line2;
     public GameObject Line1Ghost;
+
+    public TimelineControllerR taskReceivedAnim;
 
     // Start is called before the first frame update
     void Start()
@@ -44,6 +47,7 @@ public class GrandmaController : MonoBehaviour
                 Line2.SetActive(true);
                 Line1Ghost.SetActive(true);
                 Bark.PlayOneShot(barkSound);
+                taskReceivedAnim.questReceived = true;
             }
         }
     }

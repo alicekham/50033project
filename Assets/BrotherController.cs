@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Timeline;
 
 public class BrotherController : MonoBehaviour
 {
@@ -25,6 +26,8 @@ public class BrotherController : MonoBehaviour
     
     public GameObject Line1Ghost;
     //public GameObject Line3Ghost;
+
+    public TimelineControllerR taskReceivedAnim;
 
 
     // Start is called before the first frame update
@@ -54,6 +57,7 @@ public class BrotherController : MonoBehaviour
                 Line2Info.SetActive(true);
                 Bark.PlayOneShot(barkSound);
                 Line1Ghost.SetActive(true);
+                taskReceivedAnim.questReceived = true;
             }
             
             //if (counter == 100)

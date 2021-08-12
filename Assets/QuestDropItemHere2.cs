@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Timeline;
 
 public class QuestDropItemHere2 : MonoBehaviour
 {
@@ -30,6 +31,8 @@ public class QuestDropItemHere2 : MonoBehaviour
     public GameObject Line3BatteryGetted;
     public GameObject completedImg;
 
+    public TimelineController taskCompleteAnim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -57,6 +60,7 @@ public class QuestDropItemHere2 : MonoBehaviour
                 Line3GearGetted.SetActive(false);
                 Bark.PlayOneShot(barkSound);
                 completedImg.SetActive(true);
+                taskCompleteAnim.questComplete = true;
             }
         }
 
