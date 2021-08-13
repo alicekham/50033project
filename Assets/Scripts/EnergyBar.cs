@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+using UnityEngine.Events;
+
 public class EnergyBar : MonoBehaviour
 {
     //GameConstants
@@ -13,6 +15,8 @@ public class EnergyBar : MonoBehaviour
     private Energy energy;
     //Determine whether to decrease Energy
     bool decreaseEnergy = false;
+
+    public UnityEvent onDeath;
 
     void Awake()
     {
@@ -27,6 +31,11 @@ public class EnergyBar : MonoBehaviour
         {
             energy.Update();
             barImage.fillAmount = energy.GetEnergyNormalised();
+
+            if (barImage.fillAmount == 0)
+            {
+                onDeath.Invoke();
+            }
         }
         
     }
