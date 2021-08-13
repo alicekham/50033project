@@ -43,8 +43,8 @@ public class FatherController : MonoBehaviour
             {
                 metFather = true;
 
-                GhostChatQuest1.SetActive(false);
-                GhostChatQuest2.SetActive(true);
+                GhostChatQuest1.SetActive(true);
+                GhostChatQuest2.SetActive(false);
                 GhostChatQuest3.SetActive(false);
 
                 Line0.SetActive(false);
