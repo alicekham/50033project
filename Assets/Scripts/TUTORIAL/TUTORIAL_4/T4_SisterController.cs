@@ -14,9 +14,9 @@ public class T4_SisterController : MonoBehaviour
     private bool isSister;
 
     // [SerializeField] private FieldOfView fieldOfView;
-    // public GameConstants gameConstants;
-    // private Vector3 posn;
-    // private Vector3 newposn;
+    public GameConstants gameConstants;
+    private Vector3 posn;
+    private Vector3 newposn;
     private Vector3 dir;
 
 
@@ -45,7 +45,7 @@ public class T4_SisterController : MonoBehaviour
     daughterSprite = GetComponent<SpriteRenderer>();
     daughterBody = GetComponent<Rigidbody2D>();
     daughterAnimator = GetComponent<Animator>();
-    // posn = daughterBody.transform.localPosition;
+    posn = daughterBody.transform.localPosition;
     basketball = GetChildWithName("Basketball Holder");
     basketballBody = basketball.GetComponent<Rigidbody2D>();
     bounceSound = GetComponent<AudioSource>();
@@ -55,9 +55,9 @@ public class T4_SisterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   //Update FOV
-        // newposn = daughterBody.transform.localPosition;
-        // dir = newposn - posn;
-        // posn = newposn;
+        newposn = daughterBody.transform.localPosition;
+        dir = newposn - posn;
+        posn = newposn;
         // // Debug.Log(dir);
         // fieldOfView.SetDirection(dir);
         // fieldOfView.SetOrigin(transform.position);
@@ -104,14 +104,14 @@ public class T4_SisterController : MonoBehaviour
         }
 
         //basketball throwing
-        // if (gameConstants.isSister == true)
-        // {
-            // if (Input.GetKeyDown(KeyCode.Return))
-            // {
-            //     basketball.SetActive(true);
-            //     StartCoroutine(throwBall());
-            // }
-        // }
+         if (gameConstants.isSister == true)
+         {
+             if (Input.GetKeyDown(KeyCode.Return))
+             {
+                 basketball.SetActive(true);
+                 StartCoroutine(throwBall());
+             }
+         }
 
         if (Input.GetKeyDown(KeyCode.Return))
         {
@@ -120,69 +120,69 @@ public class T4_SisterController : MonoBehaviour
         }
 
         IEnumerator throwBall()
-        {
+            {
+
+                if (throwdir == "up")
+                {
+                    bounceSound.PlayOneShot(bounceSound.clip);
+                    basketball.transform.localPosition = new Vector3(0, 0.5f, 0);
+                    for (int i = 0; i < 7; i++)
+                    {
+                        //basketballBody.AddForce(Vector2.up * throwspeed, ForceMode2D.Impulse);
+
+                        basketball.transform.localPosition += new Vector3(0, 0.25f, 0);
+                        yield return new WaitForSeconds(0.05f);
+                    }
+                    basketball.transform.localPosition = new Vector3(0, 0, 0);
+                    basketball.SetActive(false);
+                    yield break;
+                }
+                else if (throwdir == "down")
+                {
+                    bounceSound.PlayOneShot(bounceSound.clip);
+                    basketball.transform.localPosition = new Vector3(0, -0.5f, 0);
+                    for (int i = 0; i < 7; i++)
+                    {
+                        //basketballBody.AddForce(Vector2.up * throwspeed, ForceMode2D.Impulse);
+
+                        basketball.transform.localPosition += new Vector3(0, -0.25f, 0);
+                        yield return new WaitForSeconds(0.05f);
+                    }
+                    basketball.transform.localPosition = new Vector3(0, 0, 0);
+                    basketball.SetActive(false);
+                    yield break;
+                }
+                else if (throwdir == "left")
+                {
+                    bounceSound.PlayOneShot(bounceSound.clip);
+                    basketball.transform.localPosition = new Vector3(-0.5f, 0, 0);
+                    for (int i = 0; i < 7; i++)
+                    {
+                        //basketballBody.AddForce(Vector2.up * throwspeed, ForceMode2D.Impulse);
+
+                        basketball.transform.localPosition += new Vector3(-0.25f, 0, 0);
+                        yield return new WaitForSeconds(0.05f);
+                    }
+                    basketball.transform.localPosition = new Vector3(0, 0, 0);
+                    basketball.SetActive(false);
+                    yield break;
+                }
+                else
+                {
+                    bounceSound.PlayOneShot(bounceSound.clip);
+                    basketball.transform.localPosition = new Vector3(0.5f, 0, 0);
+                    for (int i = 0; i < 7; i++)
+                    {
+                        //basketballBody.AddForce(Vector2.up * throwspeed, ForceMode2D.Impulse);
+
+                        basketball.transform.localPosition += new Vector3(0.25f, 0, 0);
+                        yield return new WaitForSeconds(0.05f);
+                    }
+                    basketball.transform.localPosition = new Vector3(0, 0, 0);
+                    basketball.SetActive(false);
+                    yield break;
+                }
             
-            if (throwdir == "up")
-            {
-                bounceSound.PlayOneShot(bounceSound.clip);
-                basketball.transform.localPosition = new Vector3(0, 0.5f, 0);
-                for (int i = 0; i < 7; i++)
-                {
-                    //basketballBody.AddForce(Vector2.up * throwspeed, ForceMode2D.Impulse);
-                    
-                    basketball.transform.localPosition += new Vector3(0, 0.25f, 0);
-                    yield return new WaitForSeconds(0.05f);
-                }
-                basketball.transform.localPosition = new Vector3(0, 0, 0);
-                basketball.SetActive(false);
-                yield break;
-            }
-            else if (throwdir == "down")
-            {
-                bounceSound.PlayOneShot(bounceSound.clip);
-                basketball.transform.localPosition = new Vector3(0, -0.5f, 0);
-                for (int i = 0; i < 7; i++)
-                {
-                    //basketballBody.AddForce(Vector2.up * throwspeed, ForceMode2D.Impulse);
-                    
-                    basketball.transform.localPosition += new Vector3(0, -0.25f, 0);
-                    yield return new WaitForSeconds(0.05f);
-                }
-                basketball.transform.localPosition = new Vector3(0, 0, 0);
-                basketball.SetActive(false);
-                yield break;
-            }
-            else if (throwdir == "left")
-            {
-                bounceSound.PlayOneShot(bounceSound.clip);
-                basketball.transform.localPosition = new Vector3(-0.5f, 0, 0);
-                for (int i = 0; i < 7; i++)
-                {
-                    //basketballBody.AddForce(Vector2.up * throwspeed, ForceMode2D.Impulse);
-                    
-                    basketball.transform.localPosition += new Vector3(-0.25f, 0, 0);
-                    yield return new WaitForSeconds(0.05f);
-                }
-                basketball.transform.localPosition = new Vector3(0, 0, 0);
-                basketball.SetActive(false);
-                yield break;
-            }
-            else
-            {
-                bounceSound.PlayOneShot(bounceSound.clip);
-                basketball.transform.localPosition = new Vector3(0.5f, 0, 0);
-                for (int i = 0; i < 7; i++)
-                {
-                    //basketballBody.AddForce(Vector2.up * throwspeed, ForceMode2D.Impulse);
-                    
-                    basketball.transform.localPosition += new Vector3(0.25f, 0, 0);
-                    yield return new WaitForSeconds(0.05f);
-                }
-                basketball.transform.localPosition = new Vector3(0, 0, 0);
-                basketball.SetActive(false);
-                yield break;
-            } 
-        
         }
     }
 }

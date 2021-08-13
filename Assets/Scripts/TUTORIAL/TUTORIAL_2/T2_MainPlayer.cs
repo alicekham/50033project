@@ -28,7 +28,7 @@ public class T2_MainPlayer : MonoBehaviour
         rbTransform.position = ghostBody.transform.position;
         Debug.Log("rbPosition" + rbTransform);
         humanAgent.enabled = false;
-        humanCollider.enabled = false;
+        //humanCollider.enabled = false;
         
     }
 
@@ -63,7 +63,7 @@ public class T2_MainPlayer : MonoBehaviour
                 ghostGameObject.SetActive(false);
             }
 
-            humanAgent.enabled = true;
+            //humanAgent.enabled = true;
             humanCollider.enabled = true;
             // for camera
             rbTransform.position = rb.transform.position;
@@ -83,7 +83,7 @@ public class T2_MainPlayer : MonoBehaviour
                 ghostGameObject.SetActive(true);
             }
 
-            humanAgent.enabled = false;
+            //ahumanAgent.enabled = false;
             humanCollider.enabled = false;
             // for camera
             rbTransform.position = rb.transform.position;

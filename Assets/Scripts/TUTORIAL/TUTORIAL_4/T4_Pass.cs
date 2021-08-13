@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class T4_Pass : MonoBehaviour
 {
-    public Transform targetTransform;
-    public Transform sisterTransform;
+    public clockController clockBroken;
+    public clockController clockBroken2;
+    public clockController clockBroken3;
     private Transform passTransform;
     private float distFromItem;
     private float distFromsister;
@@ -18,10 +19,10 @@ public class T4_Pass : MonoBehaviour
 
     void Update()
     {
-        distFromItem = Vector2.Distance(targetTransform.position, passTransform.position);
-        distFromsister = Vector2.Distance(sisterTransform.position, passTransform.position);
+        //distFromItem = Vector2.Distance(targetTransform.position, passTransform.position);
+        //distFromsister = Vector2.Distance(sisterTransform.position, passTransform.position);
 
-        if(distFromItem < 0.5f && distFromsister > 0.5f)
+        if(clockBroken.isBroken & clockBroken2.isBroken & clockBroken3.isBroken)
         {
             Debug.Log("Tutorial 4 Pass!");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
