@@ -63,8 +63,8 @@ public class T2_MainPlayer : MonoBehaviour
                 ghostGameObject.SetActive(false);
             }
 
-            //humanAgent.enabled = true;
-            humanCollider.enabled = true;
+            humanAgent.enabled = true;
+            // humanCollider.enabled = true;
             // for camera
             rbTransform.position = rb.transform.position;
             //Debug.Log("rbTransform: " + rbTransform);
@@ -83,8 +83,8 @@ public class T2_MainPlayer : MonoBehaviour
                 ghostGameObject.SetActive(true);
             }
 
-            //ahumanAgent.enabled = false;
-            humanCollider.enabled = false;
+            humanAgent.enabled = false;
+            // humanCollider.enabled = false;
             // for camera
             rbTransform.position = rb.transform.position;
             //Debug.Log("rbTransform: " + rbTransform);
