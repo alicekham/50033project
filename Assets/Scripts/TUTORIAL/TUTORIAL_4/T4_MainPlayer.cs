@@ -18,6 +18,12 @@ public class T4_MainPlayer : MonoBehaviour
     public Collider2D humanCollider;
     public GameObject humanLight;
 
+    public GameObject basketball;
+    public Rigidbody2D basketballBody;
+    private string throwdir;
+    public float throwspeed = 5;
+    // private AudioSource bounceSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +34,7 @@ public class T4_MainPlayer : MonoBehaviour
         rbTransform.position = ghostBody.transform.position;
         Debug.Log("rbPosition" + rbTransform);
         humanAgent.enabled = false;
-        humanCollider.enabled = false;
+        // humanCollider.enabled = false;
         
     }
 
@@ -64,15 +70,91 @@ public class T4_MainPlayer : MonoBehaviour
             }
 
             humanAgent.enabled = true;
-            humanCollider.enabled = true;
+
             // for camera
             rbTransform.position = rb.transform.position;
-            //Debug.Log("rbTransform: " + rbTransform);
             rb.MovePosition(rb.position + (movement * speed * Time.fixedDeltaTime));
             rbTransform.position = rb.transform.position;
             humanLight.SetActive(true);
-        }
+
+            //get direction to throw
         
+            if (movement.x == -1 && movement.y == 0) {throwdir = "left";}
+            else if (movement.x == 1 && movement.y == 0) {throwdir = "right";}
+            else if (movement.y == 1) {throwdir = "up";}
+            else if (movement.y == -1) {throwdir = "down";}
+            
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                basketball.SetActive(true);
+                StartCoroutine(throwBall());
+            }
+
+            IEnumerator throwBall()
+            {
+                if (throwdir == "up")
+                {
+                    // bounceSound.PlayOneShot(bounceSound.clip);
+                    basketball.transform.localPosition = new Vector3(0, 0.5f, 0);
+                    for (int i = 0; i < 7; i++)
+                    {
+                        //basketballBody.AddForce(Vector2.up * throwspeed, ForceMode2D.Impulse);
+
+                        basketball.transform.localPosition += new Vector3(0, 0.25f, 0);
+                        yield return new WaitForSeconds(0.05f);
+                    }
+                    basketball.transform.localPosition = new Vector3(0, 0, 0);
+                    basketball.SetActive(false);
+                    yield break;
+                }
+                else if (throwdir == "down")
+                {
+                    // bounceSound.PlayOneShot(bounceSound.clip);
+                    basketball.transform.localPosition = new Vector3(0, -0.5f, 0);
+                    for (int i = 0; i < 7; i++)
+                    {
+                        //basketballBody.AddForce(Vector2.up * throwspeed, ForceMode2D.Impulse);
+
+                        basketball.transform.localPosition += new Vector3(0, -0.25f, 0);
+                        yield return new WaitForSeconds(0.05f);
+                    }
+                    basketball.transform.localPosition = new Vector3(0, 0, 0);
+                    basketball.SetActive(false);
+                    yield break;
+                }
+                else if (throwdir == "left")
+                {
+                    // bounceSound.PlayOneShot(bounceSound.clip);
+                    basketball.transform.localPosition = new Vector3(-0.5f, 0, 0);
+                    for (int i = 0; i < 7; i++)
+                    {
+                        //basketballBody.AddForce(Vector2.up * throwspeed, ForceMode2D.Impulse);
+
+                        basketball.transform.localPosition += new Vector3(-0.25f, 0, 0);
+                        yield return new WaitForSeconds(0.05f);
+                    }
+                    basketball.transform.localPosition = new Vector3(0, 0, 0);
+                    basketball.SetActive(false);
+                    yield break;
+                }
+                else
+                {
+                    // bounceSound.PlayOneShot(bounceSound.clip);
+                    basketball.transform.localPosition = new Vector3(0.5f, 0, 0);
+                    for (int i = 0; i < 7; i++)
+                    {
+                        //basketballBody.AddForce(Vector2.up * throwspeed, ForceMode2D.Impulse);
+
+                        basketball.transform.localPosition += new Vector3(0.25f, 0, 0);
+                        yield return new WaitForSeconds(0.05f);
+                    }
+                    basketball.transform.localPosition = new Vector3(0, 0, 0);
+                    basketball.SetActive(false);
+                    yield break;
+                }
+            }
+        }
+
         if (isHumanBody == false)
         {   
             if (rb == humanBody)
@@ -80,10 +162,12 @@ public class T4_MainPlayer : MonoBehaviour
                 rb.velocity = Vector2.zero;
                 rb = ghostBody;
                 ghostGameObject.SetActive(true);
+                basketball.SetActive(false);
             }
 
             humanAgent.enabled = false;
-            humanCollider.enabled = false;
+            // humanCollider.enabled = false;
+
             // for camera
             rbTransform.position = rb.transform.position;
             //Debug.Log("rbTransform: " + rbTransform);
@@ -91,5 +175,6 @@ public class T4_MainPlayer : MonoBehaviour
             rbTransform.position = rb.transform.position;
             humanLight.SetActive(false);
         }
+
     }
 }

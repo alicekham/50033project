@@ -723,7 +723,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 582555223}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94f5f120c1a9f4243a55e63e437e5355, type: 3}
+  m_Script: {fileID: 11500000, guid: a5580fb14dababc498f4caa639d2c743, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
@@ -733,6 +733,9 @@ MonoBehaviour:
   humanAgent: {fileID: 1904048380}
   humanCollider: {fileID: 1904048381}
   humanLight: {fileID: 358199296}
+  basketball: {fileID: 2031903613}
+  basketballBody: {fileID: 2031903614}
+  throwspeed: 5
 --- !u!4 &582555225
 Transform:
   m_ObjectHideFlags: 0
@@ -2457,9 +2460,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   gameConstants: {fileID: 11400000, guid: 66d4c4bc3d79f7e4195f7b6604e2fa78, type: 2}
-  basketball: {fileID: 2031903613}
-  basketballBody: {fileID: 2031903614}
-  throwspeed: 5
 --- !u!50 &1904048378
 Rigidbody2D:
   serializedVersion: 4
