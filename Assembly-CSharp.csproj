@@ -72,12 +72,14 @@
      <Compile Include="Assets\Scripts\MotherController.cs" />
      <Compile Include="Assets\QuestDropItemHere3.cs" />
      <Compile Include="Assets\Scripts\TUTORIAL\TUTORIAL_4\T4_SisterController.cs" />
+     <Compile Include="Assets\Scripts\TUTORIAL\TUTORIAL_3\T3_GrabController.cs" />
      <Compile Include="Assets\Scripts\FieldOfView.cs" />
      <Compile Include="Assets\Scripts\TUTORIAL\TUTORIAL_2\T2_HumanController.cs" />
      <Compile Include="Assets\bookManager.cs" />
      <Compile Include="Assets\QuestDropItemHere2.cs" />
      <Compile Include="Assets\Scripts\TUTORIAL\TUTORIAL_4\T4_GhostController.cs" />
      <Compile Include="Assets\BrotherController.cs" />
+     <Compile Include="Assets\Scripts\TUTORIAL\TUTORIAL_4\T4_Pass.cs" />
      <Compile Include="Assets\Scripts\soundController.cs" />
      <Compile Include="Assets\Scripts\TUTORIAL\T_MotherController.cs" />
      <Compile Include="Assets\Scripts\TUTORIAL\START\StoryLine.cs" />
@@ -93,8 +95,7 @@
      <Compile Include="Assets\Scripts\Skills\daughterController.cs" />
      <Compile Include="Assets\Scripts\Openable_Doors.cs" />
      <Compile Include="Assets\Scripts\TUTORIAL\TUTORIAL_2\T2_Pass.cs" />
-     <Compile Include="Assets\Scripts\TUTORIAL\TUTORIAL_4\T4_Pass.cs" />
-     <Compile Include="Assets\Scripts\TUTORIAL\TUTORIAL_3\T3_GrabController.cs" />
+     <Compile Include="Assets\Scripts\TUTORIAL\STORYLINE\Dialogue.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
