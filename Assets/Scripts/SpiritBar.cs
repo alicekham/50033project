@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class SpiritBar : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class SpiritBar : MonoBehaviour
     private Spirit spirit;
     //Determine whether to decrease Spirit
     bool decreaseSpirit = false;
+
+    public UnityEvent onDeath;
 
     private AudioSource detectAudio;
 
@@ -34,6 +37,11 @@ public class SpiritBar : MonoBehaviour
             spirit.Update();
             barImage.fillAmount = spirit.GetSpiritNormalised();
             detectAudio.PlayOneShot(detectAudio.clip);
+        }
+
+        if (barImage.fillAmount == 0)
+        {
+            onDeath.Invoke();
         }
 
     }

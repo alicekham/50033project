@@ -1120,7 +1120,7 @@ MonoBehaviour:
   rayDist: 2
   bookObject: {fileID: 2023946792}
   gearObject: {fileID: 1540194840}
-  batteryObject: {fileID: 977965807}
+  batteryObject: {fileID: 0}
   glassesObject: {fileID: 1786571758}
 --- !u!1 &77126343
 GameObject:
@@ -6911,6 +6911,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newSprite: {fileID: 21300000, guid: 26376351ce3d39546b198056c607a153, type: 3}
   basketball: {fileID: 1339321522}
+  isBroken: 0
 --- !u!1 &522110224
 GameObject:
   m_ObjectHideFlags: 0
@@ -8584,9 +8585,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questItem: {fileID: 1540194840}
-  questItem2: {fileID: 977965807}
+  questItem2: {fileID: 0}
   questMat: {fileID: 648019937}
-  Bark: {fileID: 287757461}
+  Bark: {fileID: 1025519056}
   GhostChatQuest1: {fileID: 612572953}
   GhostChatQuest2: {fileID: 1246439162}
   GhostChatQuest3: {fileID: 877745405}
@@ -13735,55 +13736,6 @@ MonoBehaviour:
   m_Area: 0
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
---- !u!1 &977965807 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1330670409306594417, guid: d0e5e3bd2e013c24f91ae574dd8f1815, type: 3}
-  m_PrefabInstance: {fileID: 1032716710}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &977965810
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 977965807}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &977965811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 977965807}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4d661150ab404e49adcf6a4758bf3f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Bark: {fileID: 287757461}
-  GhostChatQuest1: {fileID: 612572953}
-  GhostChatQuest2: {fileID: 1246439162}
-  GhostChatQuest3: {fileID: 877745405}
-  Line1Ghost: {fileID: 1088905642}
-  Line2Gear: {fileID: 8995997}
-  Line2Battery: {fileID: 1685303859}
-  Line2Info: {fileID: 2067080668}
-  Line2GhostGear: {fileID: 1798288374}
-  Line2GhostBattery: {fileID: 2002259513}
-  Line3Battery: {fileID: 0}
 --- !u!1 &984396138
 GameObject:
   m_ObjectHideFlags: 0
@@ -14057,6 +14009,7 @@ GameObject:
   - component: {fileID: 1025519055}
   - component: {fileID: 1025519054}
   - component: {fileID: 1025519053}
+  - component: {fileID: 1025519056}
   m_Layer: 0
   m_Name: TimelineManager Quest 1
   m_TagString: Untagged
@@ -14121,6 +14074,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1025519056
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025519052}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 6dfc3564ac35b12409b53f4e7b4aefc8, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1027517841
 GameObject:
   m_ObjectHideFlags: 0
@@ -17866,7 +17915,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questItem: {fileID: 2023946792}
   questMat: {fileID: 1320785386}
-  Bark: {fileID: 287757461}
+  Bark: {fileID: 1025519056}
   GhostChatQuest1: {fileID: 612572953}
   GhostChatQuest2: {fileID: 1246439162}
   GhostChatQuest3: {fileID: 877745405}
@@ -18815,7 +18864,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questItem: {fileID: 1786571758}
   questMat: {fileID: 1409193869}
-  Bark: {fileID: 287757461}
+  Bark: {fileID: 1025519056}
   GhostChatQuest1: {fileID: 612572953}
   GhostChatQuest2: {fileID: 1246439162}
   GhostChatQuest3: {fileID: 877745405}
