@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class T2_GhostController : MonoBehaviour
+public class T3_GhostController : MonoBehaviour
 {
     // [SerializeField] private FieldOfView fieldOfView;
     private Rigidbody2D ghostBody;
