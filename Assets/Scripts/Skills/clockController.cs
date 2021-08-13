@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class clockController : MonoBehaviour
 {
-    //GameObject GetChildWithName(string name) {
-     //Transform trans = this.gameObject.transform;
-     //Transform childTrans = trans.Find(name);
-     //if (childTrans != null) {
-         //return childTrans.gameObject;
-     //} else {
-         //return null;
-     //}
-    //}
-    //GameObject battery;
-    //Rigidbody2D batteryBody;
+    GameObject GetChildWithName(string name) {
+     Transform trans = this.gameObject.transform;
+     Transform childTrans = trans.Find(name);
+     if (childTrans != null) {
+         return childTrans.gameObject;
+     } else {
+         return null;
+     }
+    }
+    GameObject battery;
+    Rigidbody2D batteryBody;
     SpriteRenderer m_SpriteRenderer;
     public Sprite newSprite;
 
@@ -27,8 +27,8 @@ public class clockController : MonoBehaviour
     void Start()
     {
         m_SpriteRenderer = GetComponent<SpriteRenderer>();
-        //battery = GetChildWithName("Battery");
-        //batteryBody = battery.GetComponent<Rigidbody2D>();
+        battery = GetChildWithName("Battery");
+        batteryBody = battery.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -39,8 +39,8 @@ public class clockController : MonoBehaviour
         {
             m_SpriteRenderer.sprite = newSprite;
             isBroken = true;
-            //battery.SetActive(true);
-            //battery.transform.localPosition += new Vector3(0, -7, 0);
+            battery.SetActive(true);
+            battery.transform.localPosition += new Vector3(0, -2, 0);
         }
     }
 }
