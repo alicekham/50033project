@@ -19,6 +19,7 @@ public class bookManager : MonoBehaviour
 
     public GameObject Line1;
     public GameObject Line2;
+    public GameObject Line0Ghost;
     public GameObject Line2Ghost;
     public GameObject Line3Ghost;
 
@@ -34,7 +35,7 @@ public class bookManager : MonoBehaviour
     {
         distWithGhost = Vector2.Distance(this.transform.position, ghostBody.transform.position);
         
-        if (distWithGhost < 1.5)
+        if (distWithGhost < 1.2)
         {
             counter2++;
             if (counter2 == 1)
@@ -46,6 +47,7 @@ public class bookManager : MonoBehaviour
                 Line1.SetActive(false);
                 Line2.SetActive(true);
                 Bark.PlayOneShot(barkSound);
+                Line0Ghost.SetActive(false);
                 Line2Ghost.SetActive(true);
             }
 
