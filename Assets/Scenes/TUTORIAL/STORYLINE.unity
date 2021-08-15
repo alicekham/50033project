@@ -503,7 +503,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.5
-  m_Text: "with high hopes to fulfill its wishes before he can rest in peace.\r"
+  m_Text: ".. with high hopes to fulfill its wishes before it can rest in peace.\r"
 --- !u!222 &404851737
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1037,7 +1037,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.5
-  m_Text: With each death, the ghost of the beloved member haunts the house..
+  m_Text: With each death, the ghost of the beloved member will then the house..
 --- !u!222 &1334910112
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1206,8 +1206,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.5
-  m_Text: "Death preys on the unsuspecting member and can take anyone with them any
-    time\u2026\r"
+  m_Text: "Death preys on the unsuspecting member, it can take out anyone any time\u2026\r"
 --- !u!222 &1577685565
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -50,7 +50,7 @@ public class T4_MainPlayer : MonoBehaviour
         if(rb.CompareTag("Human") && Input.GetKeyDown(KeyCode.Space)) {
             Debug.Log("Eject!");
             isHumanBody = false;
-            ghostBody.transform.position = humanBody.transform.position - Vector3.right;
+            ghostBody.transform.position = humanBody.transform.position - Vector3.left;
         }
     }
 
