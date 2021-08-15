@@ -23,7 +23,8 @@ public class bookManager : MonoBehaviour
     public GameObject Line0Ghost;
     public GameObject Line2Ghost;
     public GameObject Line3Ghost;
-
+    public GameObject Line4Ghost;
+    public GameObject Line5Ghost;
 
     // Start is called before the first frame update
     void Start()
@@ -36,10 +37,10 @@ public class bookManager : MonoBehaviour
     {
         distWithGhost = Vector2.Distance(this.transform.position, ghostBody.transform.position);
         
-        if (distWithGhost < 1.2)
+        if (distWithGhost < 1.2 & Line0Ghost.activeSelf)
         {
             counter2++;
-            if (counter2 == 1)
+            if (counter2 == 1 )
             {
                 GhostChatQuest1.SetActive(true);
                 GhostChatQuest2.SetActive(false);
@@ -53,7 +54,7 @@ public class bookManager : MonoBehaviour
                 Line2Ghost.SetActive(true);
             }
 
-            if (counter2 == 80)
+            if (counter2 == 80 & !Line4Ghost.activeSelf & !Line5Ghost.activeSelf)
             {
                 GhostChatQuest1.SetActive(true);
                 GhostChatQuest2.SetActive(false);

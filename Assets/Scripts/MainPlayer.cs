@@ -56,6 +56,8 @@ public class MainPlayer : MonoBehaviour
     public GameObject GhostChatQuest2;
     public GameObject GhostChatQuest3;
 
+    public GameObject Line1Ghost;
+    public GameObject Line2Ghost;
     public GameObject Line3Ghost;
     public GameObject Line4Ghost;
     public GameObject Line5Ghost;
@@ -188,6 +190,8 @@ public class MainPlayer : MonoBehaviour
                         GhostChatQuest2.SetActive(false);
                         GhostChatQuest3.SetActive(false);
 
+                        Line1Ghost.SetActive(false);
+                        Line2Ghost.SetActive(false);
                         Line3Ghost.SetActive(false);
                         Line4Ghost.SetActive(true);
                         Bark.PlayOneShot(barkSound);
@@ -209,6 +213,9 @@ public class MainPlayer : MonoBehaviour
                 GhostChatQuest3.SetActive(false);
 
                 Bark.PlayOneShot(barkSound);
+                Line1Ghost.SetActive(false);
+                Line2Ghost.SetActive(false);
+                Line3Ghost.SetActive(false);
                 Line4Ghost.SetActive(false);
                 Line5Ghost.SetActive(true);
             }

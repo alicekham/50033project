@@ -19,5 +19,5 @@ MonoBehaviour:
   currentPlayerEnergy: 100
   energy_DecreaseRate: 1
   isMother: 0
-  isButler: 1
+  isButler: 0
   isSister: 0
