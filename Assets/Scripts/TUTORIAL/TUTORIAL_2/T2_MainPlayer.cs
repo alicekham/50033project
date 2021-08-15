@@ -85,6 +85,7 @@ public class T2_MainPlayer : MonoBehaviour
 
             humanAgent.enabled = false;
             // humanCollider.enabled = false;
+            
             // for camera
             rbTransform.position = rb.transform.position;
             //Debug.Log("rbTransform: " + rbTransform);
