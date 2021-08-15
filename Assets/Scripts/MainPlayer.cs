@@ -97,7 +97,7 @@ public class MainPlayer : MonoBehaviour
                 if (i == 2) gameConstants.isSister = true;
                 possessAudio.PlayOneShot(possessAudio.clip);
             }
-            if (Input.GetKeyDown(KeyCode.Space) && distWithToyCar < 1.2f)
+            if (Input.GetKeyDown(KeyCode.Space) && distWithToyCar < 1.0f)
             {
                 isToyCarBody = true;
                 possessAudio.PlayOneShot(possessAudio.clip);
