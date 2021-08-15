@@ -21,6 +21,11 @@ public class clockController : MonoBehaviour
     public GameObject basketball;
     private float distWithBall;
 
+    public Rigidbody2D ghostBody;
+    private float distWithGhost;
+    public GameObject questLight;
+    public GameConstants gameConstants;
+
     public bool isBroken = false;
 
     // Start is called before the first frame update
@@ -41,6 +46,15 @@ public class clockController : MonoBehaviour
             isBroken = true;
             battery.SetActive(true);
             battery.transform.localPosition += new Vector3(0, -2, 0);
+        }
+        distWithGhost = Vector2.Distance(this.transform.position, ghostBody.transform.position);
+        if (distWithGhost < 3f & gameConstants.isSister)
+        {
+            questLight.SetActive(true);
+        }
+        else
+        {
+            questLight.SetActive(false);
         }
     }
 }

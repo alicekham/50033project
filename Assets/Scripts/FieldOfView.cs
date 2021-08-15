@@ -64,7 +64,6 @@ public class FieldOfView : MonoBehaviour
                 {
                     onDamageGhost.Invoke();
                     ghostDetected = true;
-                    Debug.Log("Entered");
                     
                    
                 }

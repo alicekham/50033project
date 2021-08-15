@@ -265,4 +265,11 @@ public class MainPlayer : MonoBehaviour
             rb.MovePosition(rb.position + (movement * speed * Time.fixedDeltaTime));
         }
     }
+
+    private void OnApplicationQuit()
+    {
+        gameConstants.isMother = false;
+        gameConstants.isButler = false;
+        gameConstants.isSister = false;
+    }
 }

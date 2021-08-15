@@ -17,6 +17,7 @@ public class bookManager : MonoBehaviour
     public GameObject GhostChatQuest2;
     public GameObject GhostChatQuest3;
 
+    public GameObject Line0;
     public GameObject Line1;
     public GameObject Line2;
     public GameObject Line0Ghost;
@@ -43,7 +44,8 @@ public class bookManager : MonoBehaviour
                 GhostChatQuest1.SetActive(true);
                 GhostChatQuest2.SetActive(false);
                 GhostChatQuest3.SetActive(false);
-                
+
+                Line0.SetActive(false);
                 Line1.SetActive(false);
                 Line2.SetActive(true);
                 Bark.PlayOneShot(barkSound);
@@ -51,7 +53,7 @@ public class bookManager : MonoBehaviour
                 Line2Ghost.SetActive(true);
             }
 
-            if (counter2 == 150)
+            if (counter2 == 80)
             {
                 GhostChatQuest1.SetActive(true);
                 GhostChatQuest2.SetActive(false);

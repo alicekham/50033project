@@ -33,6 +33,11 @@ public class QuestDropItemHere2 : MonoBehaviour
 
     public TimelineController taskCompleteAnim;
 
+    public Rigidbody2D ghostBody;
+    private float distWithGhost;
+    public GameObject questLight;
+    public GameConstants gameConstants;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -80,7 +85,15 @@ public class QuestDropItemHere2 : MonoBehaviour
             questItem2.transform.parent = null;
         }
 
-        
-        
+        distWithGhost = Vector2.Distance(this.transform.position, ghostBody.transform.position);
+        if (distWithGhost < 3f & gameConstants.isButler)
+        {
+            questLight.SetActive(true);
+        }
+        else
+        {
+            questLight.SetActive(false);
+        }
+
     }
 }

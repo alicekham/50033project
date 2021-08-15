@@ -21,6 +21,10 @@ public class computerController : MonoBehaviour
     public GameObject basketball;
     private float distWithBall;
 
+    public Rigidbody2D ghostBody;
+    private float distWithGhost;
+    public GameObject questLight;
+    public GameConstants gameConstants;
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +42,16 @@ public class computerController : MonoBehaviour
             m_SpriteRenderer.sprite = newSprite;
             gear.SetActive(true);
             gear.transform.localPosition += new Vector3(0, -5f, 0);
+        }
+
+        distWithGhost = Vector2.Distance(this.transform.position, ghostBody.transform.position);
+        if (distWithGhost < 3f & gameConstants.isSister)
+        {
+            questLight.SetActive(true);
+        }
+        else
+        {
+            questLight.SetActive(false);
         }
     }
 }
