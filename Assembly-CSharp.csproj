@@ -117,6 +117,9 @@
     <Compile Include="Assets\Scripts\Skills\daughterController.cs" />
     <Compile Include="Assets\Scripts\Openable_Doors.cs" />
     <Compile Include="Assets\Scripts\TUTORIAL\TUTORIAL_2\T2_Pass.cs" />
+    <Compile Include="Assets\Scripts\TUTORIAL\START\Level1Guide.cs" />
+    <Compile Include="Assets\Scripts\TUTORIAL\START\Level1Story.cs" />
+    <Compile Include="Assets\RestartButton.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
