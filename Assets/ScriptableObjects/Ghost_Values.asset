@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Max_Spirit: 100
   currentPlayerSpirit: 100
-  spirit_DecreaseRate: 15
+  spirit_DecreaseRate: 5
   Max_Energy: 100
   currentPlayerEnergy: 100
   energy_DecreaseRate: 1

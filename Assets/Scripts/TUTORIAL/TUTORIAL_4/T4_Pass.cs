@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class T4_Pass : MonoBehaviour
 {
-    public clockController clockBroken;
-    public clockController clockBroken2;
-    public clockController clockBroken3;
+    public TargetController clockBroken;
+    public TargetController clockBroken2;
+    public TargetController clockBroken3;
     private Transform passTransform;
     private float distFromItem;
     private float distFromsister;
