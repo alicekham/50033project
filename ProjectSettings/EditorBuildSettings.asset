@@ -42,6 +42,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TUTORIAL/L1_GUIDE.unity
     guid: 79f431bf75ea2794db270682b5ccc764
   - enabled: 1
+    path: Assets/Scenes/TUTORIAL/STORYLINE_2.unity
+    guid: 1f9eea78ee3062b478b88f51aca19373
+  - enabled: 1
     path: Assets/Scenes/LEVEL 1.unity
     guid: a053f6fc246273942adc44bb6d4053e2
   m_configObjects: {}
