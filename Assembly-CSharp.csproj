@@ -98,6 +98,9 @@
      <Compile Include="Assets\Scripts\Skills\daughterController.cs" />
      <Compile Include="Assets\Scripts\Openable_Doors.cs" />
      <Compile Include="Assets\Scripts\TUTORIAL\TUTORIAL_2\T2_Pass.cs" />
+     <Compile Include="Assets\ToyCarLightController.cs" />
+     <Compile Include="Assets\Scripts\TUTORIAL\START\Level1Guide.cs" />
+     <Compile Include="Assets\SuccessGame.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

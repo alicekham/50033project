@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7f295c9573bea724cba1656fd3c2b2be
+guid: 44c545d32e6514941b262f4dc18af68a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6258200454185170781
-    second: lvl1_0
+      213: 3959015412381690366
+    second: story4_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -94,22 +94,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lvl1_0
+      name: story4_0
       rect:
         serializedVersion: 2
-        x: 36
-        y: 112
-        width: 240
-        height: 48
+        x: 140
+        y: 171
+        width: 770
+        height: 232
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5735ecd72899d650800000000000000
-      internalID: 6258200454185170781
+      spriteID: ef9ae43ba8f31f630800000000000000
+      internalID: 3959015412381690366
       vertices: []
       indices: 
       edges: []
