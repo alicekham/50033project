@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7f295c9573bea724cba1656fd3c2b2be
+guid: de8ae54b2f2a3b5429289fcdc3b3d734
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6258200454185170781
-    second: lvl1_0
+      213: 1480917699468073914
+    second: dog_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -94,22 +94,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lvl1_0
+      name: dog_0
       rect:
         serializedVersion: 2
-        x: 36
-        y: 112
-        width: 240
-        height: 48
+        x: 21
+        y: 4
+        width: 214
+        height: 241
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5735ecd72899d650800000000000000
-      internalID: 6258200454185170781
+      spriteID: abb126a2dc64d8410800000000000000
+      internalID: 1480917699468073914
       vertices: []
       indices: 
       edges: []
